@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询单词</title>
+    <link href="css/search.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>  
+    <div id="head">
+        <img src="img/tedu.jpg">
+    </div>
+    <div id="center">
+        <input type="text" name="word" id="content" autocomplete="off" placeholder="在此输入要查询的单词">
+        <button id="btn" type="button" onclick="queryWord()">查询</button>
+        <div id="result"></div>
+    </div>
+    <div id="footer">
+        Copyright © 2013-2019 All Rights Reserved. 备案号: xxxxxxx
+    </div>
+    <script>
+        var div = document.getElementById("result");
+        var word = document.getElementById("content");
+
+        function queryWord(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function (){
+                if(this.readyState==4 && this.status==200){
+                    div.innerHTML = this.responseText;
+                };
+            };
+            xhttp.open("POST","http://127.0.0.1:8000/search",true);
+            xhttp.setRequestHeader("Content-Type","multipart/form-data");
+            var w = word.value;
+            console.log(w);
+            xhttp.send("word="+w);
+        };
+    </script>
+    
+</body>
+
+</html>

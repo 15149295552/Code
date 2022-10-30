@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习2</title>
+</head>
+<body>
+    <h1>增加管理员</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        姓名：<input type="text" name="user" maxlength="10">  十个字符以内
+        <br>
+        密码：<input type="password" name="pwd" maxlength="10">  十个字符以内
+        <br>
+        性别：<input type="radio" name="sex" value="1"> 男士
+             <input type="radio" name="sex" value="2"> 女士
+        <br>
+        角色：<input type="checkbox" name="role" value="1"> 超级管理员
+             <input type="checkbox" name="role" value="2"> 账单管理员
+        <br>
+        头像：<input type="file" name="hd">
+        <br>
+        <input type="submit" value="保存">
+        <input type="reset" value="重置">
+
+    </form>
+    
+</body>
+</html>

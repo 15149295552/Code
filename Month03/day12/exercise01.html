@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+    <style>
+        ul li{
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .active {
+            color: white;
+            background-color: red;
+        }
+    </style>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>难度：</li>
+        <li class="item active">全部</li>
+        <li class="item">初级</li>
+        <li class="item">中级</li>
+        <li class="item">高级</li>
+    </ul>
+
+    <script>
+        // 遍历几个选项
+        $(".item").each(function(index,ele){
+            // 分别添加点击事件
+            $(ele).on("click",function(){
+                $(".active").removeClass("active");
+                $(this).addClass("active");
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="image/1.jpeg" alt="">
+
+    <script>
+        function changeAttr(){
+            // img是一个数组
+            var img = document.getElementsByTagName("img");
+            console.log(img[0].src);
+            img[0].src="image/2.jpeg";
+        }
+        changeAttr();
+
+    </script>
+    
+</body>
+</html>

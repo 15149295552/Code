@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        #outer {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 相对定位： 相对元素原本位置进行微调 */
+            position: relative;
+            /* 原理top30px */
+            top : 30px;
+            left :40px;
+            /* 同为标准流，设置覆盖层级 */
+            z-index: -1;
+        }
+        #footer {
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="outer"></div>
+    <div id="footer"></div>
+    
+</body>
+</html>

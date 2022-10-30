@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS优先级</title>
+     
+    <style>
+        /* h1 {
+            color: blue;
+        } */
+
+        /* 类选择器比标签选择器优先级高 */
+        .blue {
+            color: blue;
+        }
+
+        #center {
+            font-size: 40px;
+        }
+
+        /* 权重 id 100 + 标签 1 =》 101 */
+        #center p{
+            color: blue;
+        }
+
+        /* 权重 id -> 100 */
+        #con {
+            color: red;
+            font-size: 25px;
+        }
+
+        a{
+            color: black;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="demo.css">
+
+</head>
+<body>
+    <!-- 行内样式优先级高于内嵌样式 -->
+    <h1 style="color:red;">行内样式和内嵌样式比较</h1>
+
+    <!-- 内嵌样式和外联样式优先级相同，后写的覆盖先写的 -->
+    <h1 id="one" class="blue">内嵌样式与外联样式比较</h1>
+
+    <div id="center">
+        <p id="con">我是div下的p标签</p>
+    </div>
+
+    <!-- 默认样式和继承于父元素的样式优先级最低认为权重为0 -->
+    <a href="">这是a标签我有默认颜色</a>
+
+</body>
+</html>

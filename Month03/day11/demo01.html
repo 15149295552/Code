@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        // 定义一个函数
+        // function func01(){
+        //     console.log("我是一个简单的函数");
+        // }
+        // func01()  // 函数名() 调用函数
+
+        // 形参和返回值
+        // function  func02(a,b=2){
+        //     return a+b; // 返回值 函数结束
+        // }
+        // 获取返回值
+        // var res = func02(10,20);
+        // console.log(res);
+
+        // 匿名函数
+        // var func = function (a,b){
+        //     console.log(a,b);
+        //     console.log("哈哈哈，我是匿名的");
+        // }
+        // func(1,2);
+
+        // 定义匿名函数并直接调用
+        // (function (){
+        //     console.log("这件事只想做一次");
+        // })();
+
+        
+        // 高阶函数，该函数参数还是一个函数
+        function func03(inner){
+            console.log("对inner函数做一定的验证等功能")
+            inner()
+        }
+
+        function zfb(){            
+            console.log("做了一个支付宝功能");
+        }
+
+        function wx(){
+            console.log("做了一个微信功能");
+        }
+
+        // func03(wx);
+
+        // 匿名函数作为实参，直接传递给高阶函数的形参
+        func03(function(){
+            console.log("做了一个银联功能");
+        });
+
+    </script>
+</body>
+</html>

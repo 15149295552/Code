@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM获取节点对象</title>
+</head>
+<body>
+    <h1 id="one" class="title">标签1</h1>
+    <h1 class="title">标签2</h1>
+
+    <script>
+        // 通过ID获取某个标签对象
+        var res1 = document.getElementById("one");
+        console.log(res1);
+        // 通过类名或者标签名获取到的是一个数组，数组中是各个标签对象
+        var res2 = document.getElementsByClassName("title");
+        console.log(res2[0]);
+        var res3 = document.getElementsByTagName("h1");
+        console.log(res3);
+    </script>
+    
+</body>
+</html>

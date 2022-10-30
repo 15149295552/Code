@@ -1,0 +1,101 @@
+前情回顾
+
+1. 事务控制
+   begin;  commit;  rollback;
+
+   原子性  一致性  隔离性  持久性
+
+   隔离级别 ： 读未提交 读已提交 可重复度  串行化
+
+2. 数据库优化
+
+   数据库范式   引擎   字段数据类型   键的选择
+   SQL语句优化   拆表
+
+3. 备份
+
+   表 ： create table  [tb] select ....
+   库 ： mysqldump -- > SQL文件
+
+4. 用户权限
+
+   create user "user"@"%" identified by "密码";
+
+   drop user
+
+   grant
+   revoke
+
+5. pymysql
+
+   db = pymysql.connect()
+   cur = db.cursor()
+
+   cur.execute("sql",[val1,val2])
+   db.commit()
+   db.rollback()
+
+   cur.close()
+   db.close()
+
+
+数据库部分总结
+
+1. 建库建表
+   建库语句   建表语句   数据类型   字段约束
+   范式思想   外键约束   表关系   E-R模型
+   引擎选择   alter
+
+2. 查询操作
+   基础查询  运算符使用   高级查询   子查询
+   索引   聚合查询   窗口函数   多表查询
+   函数
+
+3. 写入操作
+   增删改语句   存储过程   事务
+
+4. 其他
+   数据库基本概念   视图   数据库优化
+   用户和权限   数据库备份   pymysql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+今日内容：
+1. pymysql
+2. 总结mysql数据库
+3. 认识什么是前后端
+4. html网页标签
+
+作业：1. 今日标签会用
+     2. mysql 语句总结
+     3. 字符串，列表 方法
+
+
+
+
+
+
+
+
+

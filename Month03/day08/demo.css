@@ -1,0 +1,8 @@
+/* h1 {
+    color: brown;
+} */
+
+/* id选择器比类选择器优先级高 */
+#one {
+    color:blueviolet;
+}

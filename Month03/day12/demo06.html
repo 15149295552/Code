@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery遍历</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <script>
+        // 遍历函数每次index得到对应的索引，ele得到对应dom对象
+        $("li").each(function(index,ele){
+            // ele.innerHTML=`第${index+1}项`;
+            $(ele).html(`第${index+1}项`);
+        })
+
+        // 遍历数组
+        var arr = ["lily","tom","joy"]
+        $.each(arr,function(index,item){
+            console.log(index,item);
+        })
+    </script>
+
+</body>
+</html>

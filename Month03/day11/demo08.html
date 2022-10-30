@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ使用</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li id="one"></li>
+        <li id="two" class="re"></li>
+        <li id="three" class="re"></li>
+    </ul>
+    
+    <script>
+        // 选择器 写法同css选择器 -》jQuery
+        console.log($("li"))
+        console.log($("#one"))
+        console.log($(".re"))
+
+        // 整体调用方法，表示每个节点都会做相同的操作
+        $("li").html("这是一个li");
+
+        // 配合过滤器进行标签选择
+        $("li:first").html("嘿嘿嘿我只改第一个")
+        $("li:eq(1)").html("哈哈哈我只改第二个")
+        $("li:gt(1)").html("哈哈哈我只改索引大于1的")
+        
+    </script>
+
+</body>
+</html>

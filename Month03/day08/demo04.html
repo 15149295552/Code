@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素间更灵活的使用转换</title>
+    <style>
+        /* display : 块block 行内块inline-block 行内inline
+        块 -》行内块  行内-》行内块 */
+        li {
+            display:inline-block ;
+            width: 80px;
+        }
+        span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>首页</li>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+    </ul>
+
+    <p>
+        <span>Lorem</span> ipsum dolor, sit amet consectetur adipisicing elit. Consectetur rem ipsa tenetur quasi quidem dolorum, eius, ratione explicabo eligendi, odio quas. Accusantium sed ea dolor, perspiciatis aliquid saepe. Nulla, nam.
+    </p>
+    
+</body>
+</html>

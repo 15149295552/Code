@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单控件</title>
+</head>
+<body>
+    <!-- 如果提交的内容有文件则通常使用post方法，enctype改为multipart/form-data类型 -->
+    <form action="" enctype="multipart/form-data">
+        <input type="datetime-local" name="tm" >
+        <br>
+        <!-- name 和 value 必须要有，同name互斥 checked表示默认选项 -->
+        性别：
+        <input type="radio" value="1" name="sex" checked>男
+        <input type="radio" value="2" name="sex">女
+        <br>
+        爱好：
+        <input type="checkbox" name="hb" value="0" checked>抽烟
+        <input type="checkbox" name="hb" value="1" >喝酒
+        <input type="checkbox" name="hb" value="2" >烫头
+
+        <br>
+
+        头像：
+        <input type="file" name="head">
+
+        <br>
+        城市：
+        <!-- name在select中设定，值在option中 -->
+        <select name="city">
+            <option value="bj">北京</option>
+            <!-- selected表示初始选择 -->
+            <option value="sh" selected>上海</option>
+            <option value="sz">深圳</option>
+        </select>
+        <br>
+        <!-- 文本输入框 -->
+        <textarea name="content" cols="30" rows="10" placeholder="感想.."></textarea>
+
+        <br>
+        <button>提交</button>
+        <input type="reset" value="重置">
+    </form>
+    
+</body>
+</html>

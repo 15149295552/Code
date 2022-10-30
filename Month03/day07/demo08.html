@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代和子代选择器</title>
+
+    <style>
+        /* 后代选择器  #book下所有标签中的li*/
+        #book li{
+            color:red;
+        }
+
+        /* 子代选择器 #author下一级的span*/
+        #author>span{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="book">
+        <ul>
+            <li>撒哈拉故事</li>
+            <li>骆驼祥子</li>
+            <li>围城</li>
+        </ul>
+    </div>
+    <div id="author">
+        <span>著名作家</span>
+        <ul>
+            <li>三毛<span>(台湾作家)</span></li>
+            <li>老舍</li>
+            <li>钱钟书</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

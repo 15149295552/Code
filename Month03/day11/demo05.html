@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作form表单属性</title>
+</head>
+<body>
+    <form action="">
+       用户： <input type="text" name="user" value="" onblur="getValue();">
+             <br>
+       密码： <input type="password" name="password" value="" id="pwd">
+             <input type="button" value="眼睛" onclick="getAttr();">    
+             <br>
+       性别： <input type="radio" name="sex" value="1" checked>男
+             <input type="radio" name="sex" value="2">女
+             <br>
+             <button>提交</button>
+    </form>
+    
+    <script>
+        function getValue(){
+            // 页面所有表单对象的数组forms -> 索引-> name值/id值 直接获取控件节点对象
+            console.log(document.forms[0].user.value);
+            console.log(document.forms[0].sex.value);
+            if(document.forms[0].user.value.length < 6){
+                alert("用户名太短啦！");
+            }
+        } 
+
+        // getValue();
+
+        // 通过get set 方法修改元素节点对象属性值
+        function getAttr(){
+            var pwd = document.getElementById('pwd');
+            var nowType = pwd.getAttribute('type');
+            // 判断获取到的type属性值，明文-》加密  密文-》明文
+            if(nowType == "password"){
+                pwd.setAttribute("type","text");
+            }else{
+                pwd.setAttribute("type","password");
+            }  
+        }
+        // getAttr();
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <!-- before -->
+    <div>
+        <!-- prepend -->
+        <p>div原来的内容</p>
+        <!-- append -->
+    </div>
+    <!-- after -->
+
+    <p id="other">要去掉</p>
+
+    <script>
+        // var h1 = $("<h1></h1>");
+        // h1.html("后增加的标签")
+        // h1.prop("id","title")
+        // h1.css("color","red")
+
+        //链式写法
+        var h1 = $("<h1></h1>").html("后增加的标签").prop("id","title").css("color","red");
+
+        $('div').prepend(h1); // 第一个孩子
+        $('div').append(h1); // 最后一个孩子
+        $('div').before(h1); // 上一个哥哥
+        $('div').after(h1); // 下一个弟弟
+        
+        // 删除指定元素
+        $("#other").remove()
+
+    </script>
+    
+    
+</body>
+</html>

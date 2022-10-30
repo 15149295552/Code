@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- action 表示将数据提交给谁 method设置提交方法
+    get 方式，数据将会以参数变量值的形式显示在地址栏 -->
+    <form action="https://www.baidu.com/s" method="get">
+        <!-- 表单空间，表示一些输入框，提价按钮等 -->
+        <input type="text" name="wd">
+        <input type="submit" value="百毒一下">
+    </form>
+    <br>
+    <!-- post 数据将会传递给服务端，不会在地址栏展示，相对安全 -->
+    <form action="" method="post">
+        用户：<input type="text" name="user">
+        <br>
+        密码：<input type="password" name="pwd">
+        <br>
+        <input type="submit" value="登录">
+    </form>
+</body>
+</html>

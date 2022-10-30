@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动之半脱离文档流</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <!-- div浮动后并不会覆盖文字而是出现文字环绕效果 -->
+    <div></div>
+    <!-- p>lorem*3 -->
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus laborum quaerat atque placeat eum officia eius officiis, ut voluptatum esse cum, totam minima illo inventore iusto omnis accusantium excepturi ad!</span><span>Recusandae facere eius porro ea sequi tenetur, rerum sapiente officiis repudiandae nemo? Consequatur, qui? Mollitia, blanditiis. Consequatur, neque, vel explicabo facilis voluptas incidunt quod ducimus rem, porro commodi ullam temporibus?</span><span>Illo laborum, fugit iure, saepe laudantium voluptatem ad nisi velit deleniti vel nemo maxime illum ullam tempora eum! Aut soluta odio harum cupiditate facilis. Sit incidunt vitae quidem consequatur est!</span></p>
+    
+</body>
+</html>

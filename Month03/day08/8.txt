@@ -1,0 +1,59 @@
+前情回顾
+
+1. HTML标签
+   结构标签：
+     列表 ol  ul  li
+     表格 table  tr   td(rowspan,colspan)
+
+   表单 ：
+     form （action  method  enctype）
+     input (type name value placeholder maxlenght minlenght checked)
+     select (name)
+        option (value)
+     textarea (name value  placeholder cols rows)
+   
+   botton
+
+2. CSS语法
+   层叠样式表--》 修饰网页  网页布局
+
+   行内样式   
+   内嵌样式 ： head  --> style  
+   外联样式 : .css程序 -》 link
+
+3. css选择器 ： 选择页面中要修饰的标签元素
+   
+   选择器名字 {
+       css属性键值对;
+       css属性键值对;
+       ....
+   }
+
+   标签 ：  p {}
+   id  :   #id值 {}
+   class :  .class值 {}
+   群组 :    选1,选2,.. {}
+   后代 ：   选1 选2 {}
+   子代 ：   选1>选2>选3 {}
+   伪类 ：   选1：伪类 {}
+
+
+优先级总结：
+1. css属性冲突情况下讨论优先级
+2. 有行内样式不用看其他
+3. 内嵌样式和外联样式看选择器
+4. 选择器优先级 id > 类 > 标签 > 继承和默认样式
+5. 后代子代选择器优先级权重叠加
+6. 选择器优先级相同后写覆盖前面的
+
+
+今日内容：
+1. css特性
+2. 元素分类 
+3. 长度颜色
+4. css属性 ： 背景  文字  文本  边框
+
+作业：
+1. 今天的css属性设置练习一下
+2. 编写一个程序在div 中有 “PLUS会员”字样，实现如下效果：
+

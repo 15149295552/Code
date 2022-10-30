@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类</title>
+    <style>
+        a {
+            font-size: 30px;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        /* 可以作用于所有标签 */
+        a:hover {
+            background-color: aqua;
+        }
+
+        a:active {
+            background-color: burlywood;
+        }
+
+        div{
+            font-size: 30px;
+            background-color: aliceblue;
+        }
+        /* div的鼠标悬停效果 */
+        div:hover {
+            font-size: 40px;
+            color: red;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="https://www.tmooc.cn/">这是一个超链接</a>
+
+    <div>法师</div>
+    <div>战士</div>
+    <div>射手</div>
+
+
+</body>
+
+</html>

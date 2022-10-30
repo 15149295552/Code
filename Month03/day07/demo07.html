@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器1</title>
+
+    <style>
+        /* id选择器 配合元素id值*/
+        #one {
+            color: red;
+        }
+
+        /* 类选择器 ： 配置类的名称 */
+        .blue {
+            color: blue;
+        }
+        .big {
+            font-size: 40px;
+        }
+
+        /* 群组选择器  */
+        #one,.blue,h2 {
+            background-color: aqua;
+        }
+
+        /* 通用选择器 选择所有标签 */
+        * {
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!-- id和class命名 数字字母下划线短横线构成,不以数字开头 -->
+    <h1 id="one" class="big">第一个h1</h1>
+    <h1 id="two" class="blue">第二个h1</h1>
+    <!-- class可以有多个值 -->
+    <h1 id="three" class="blue big">第三个h1</h1>   
+
+    <h2>我是一个h2标签</h2>
+
+</body>
+</html>

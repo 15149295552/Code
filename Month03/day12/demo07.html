@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <select name="city" id="city">
+        <option value="0">请选择</option>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+    </select>
+    <select name="area" id="area">
+        <option value="0">请选择</option>
+    </select>
+
+    <script>
+        // data数组中每一项都是一个字典，每一项对应一个一级菜单选项
+        var data = [
+            {   
+                name:"请选择",
+                value : "0",
+                child:[
+                    {
+                        name:"请选择",
+                        avalue:"0"
+                    }
+                ]
+             
+            },
+            {
+                name:"北京",
+                value : "bj",
+                child:[
+                    {
+                        name:"朝阳",
+                        avalue:"bjcy"
+                    },
+                    {
+                        name:"海淀",
+                        avalue:"bjhd"
+                    }
+                ]
+             
+            },
+            {
+                name:"上海",
+                value : "sh",
+                child:[
+                    {
+                        name:"静安",
+                        avalue:"shja"
+                    },
+                    {
+                        name:"崇明",
+                        avalue:"shcm"
+                    }
+                ]
+             
+            }
+        ]
+        
+        // 给二级下拉菜单添加option标签
+        function addOption(child){
+            $.each(child,function(index,item){
+                var newOption=$("<option></option>").html(item.name).prop("value",item.avalue)
+                $("#area").append(newOption);
+            })  
+        }
+
+        $("#city").on("change",function(){
+            // 删除二级菜单原来的菜单内容
+            $("#area option").remove(); 
+            $.each(data,function(index,item){
+                // 获取第一个下拉菜单选择项的value
+                if(item.value == $("#city").val()){
+                    // 向二级菜单填充内容
+                    addOption(item.child);
+                }
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

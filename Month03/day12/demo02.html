@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 设置css</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="one"></div>
+
+    <script>
+        // 设置单一样式
+        $("#one").css("border","2px solid red");
+        
+        // 设置一组样式
+        var divStyle = {
+            "width":"200px",
+            "height":"200px",
+            "background-color":"blue"
+        }
+        $("#one").css(divStyle);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+前情回顾
+
+1. JS 函数
+   function  func(a,b=1){}
+   function  (){}
+
+2. JS操作网页 --》 DOM操作
+   
+   document
+
+   找节点(元素)对象
+     getElementById()
+     getElementsByTagName()
+     getElementsByClassName()
+
+   操作内容： innerHTML  innerText
+
+   操作属性： element.属性名
+            element.getAttribute()
+            element.setAttribute()
+            element.removeAttribute()
+   
+   样式 ： element.style.样式名 = value
+
+   事件 ：  <h1 onclick="js代码;"> </h1>
+          
+          element.onclick = func;
+
+3. jQuery   
+
+  找节点生成jQ对象： $(css选择器:过滤器)
+
+   $(element)    jq_obj[0]
+    
+   jq_obj.html()
+   jq_obj.text()
+   jq_obj.val()
+
+
+
+jQuery 与 DOM对比
+
+查找节点：
+    DOM : 获取到dom对象-》element
+        getElementById()
+        getElementsByTagName()
+        getElementsByClassName()
+
+   jQuery ： 获取jQ对象 
+        $(选择器:过滤器)
+
+操作内容
+    DOM :  element.innerHTML = ""
+    jQuery:  jQ.html()
+
+操作属性
+    DOM :  element.属性名
+            element.getAttribute()
+            element.setAttribute()
+            element.removeAttribute()
+
+    jQuery:  jQ.prop() 
+             jQ.removeAttr()
+             jQ.addClass()
+
+操作样式
+   DOM : element.style.样式 = ""
+   jQuery : jQ.css()
+
+增加新标签 ： 
+   jQuery:   $(标签).html().prop().css()
+             .append()
+
+事件触发 ：
+   DOM ：   element.onclick = func(){}
+   jQ :    jQ.on("click",func(){})
+
+其他函数： jQ -》 hide() show() each()
+
+
+前端基础部分总结
+
+HTML 
+  常用标签
+  标签分类 ： 块  行内块  行内
+
+CSS 
+  css选择器 ： 类   id   标签  子代  后代 群组  伪类
+  css特征： 层叠   继承   优先级
+  css属性： 背景  文字  文本  边框  边距
+  css布局： 浮动   定位
+
+JS
+  js语法：变量  数据类型  运算符  流程控制语句
+         函数
+
+  DOM操作 ： 获取节点  内容  属性  样式 事件
+
+  jQuery ：jQ选择器 html() text() prop()
+          addClass()  css() each() hide()
+
+
+今日内容：
+1. jQuery 
+2. 前端基础部分总结
+3. 网络基本概念
+
+作业：1. 前端部分分类总结
+     2. 编程作业
+

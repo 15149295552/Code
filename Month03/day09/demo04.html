@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动之高度塌陷</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #head {
+            /* 父元素设置高度防止塌陷 */
+            /* height: 80px; */
+            /* 防止父元素塌陷 */
+            overflow: hidden;
+            border-top: solid 5px #ff8500;
+            background-color: #fcfcfc;
+        }
+        #head div {
+            /* 子元素已经设置浮动后无法撑起父元素 */
+            height: 80px;
+            font-size: 20px;
+            font-family: "宋体";
+            text-align: center;
+            line-height: 80px;
+            /* 通过内边距撑元素宽度，让文字距离一致 */
+            padding: 0px 30px;
+        }
+        .left {
+            float:left
+        }
+        .right {
+            float:right
+        }
+        #head div:hover {
+            color:#ff841e;
+            background-color: #edeef0;
+            /* 鼠标形状 */
+            cursor: pointer;
+        }
+        a:hover{
+            color:#ff841e;
+        }
+
+        a{  
+            color:#4c4c5c;
+            text-decoration: none;
+        }
+
+        #next {
+            height: 80px;
+            background-color: #cd0506;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="head">
+        <div class="left"><a href="">首页</a></div>
+        <div class="left"><a href="">手机新浪网</a></div>
+        <div class="left"><a href="">移动客户端</a></div>
+        <div class="right"><a href="">邮箱</a></div>
+        <div class="right"><a href="">注册</a></div>
+        <div class="right"><a href="">登录</a></div>  
+    </div>
+
+    <div id="next">迎接新时代到来</div>
+</body>
+</html>

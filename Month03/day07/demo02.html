@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- 表格 2行2列 -->
+    <table border="1px" width="300px">
+        <tr align="center">
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        <tr align="center">
+            <td>迪丽热巴</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <!-- 单元格合并 -->
+    <table border="1px" width="300px" cellspacing="0">
+        <tr align="center">
+            <!-- 设置跨列合并 删除1行2列 -->
+            <td colspan="2">1行1列</td>
+            <!-- <td>1行2列</td> -->
+            <td>1行3列</td>
+            <td>1行4列</td>
+        </tr>
+        <tr align="center">
+            <!-- 跨行合并 删除3行1列 -->
+            <td rowspan="2">2行1列</td>
+            <td>2行2列</td>
+            <td>2行3列</td>
+            <td>2行4列</td>
+        </tr>
+        <tr align="center">
+            <!-- <td>3行1列</td> -->
+            <td>3行2列</td>
+            <td>3行3列</td>
+            <td>3行4列</td>
+        </tr>
+    </table>
+
+</body>
+</html>

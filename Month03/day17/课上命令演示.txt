@@ -1,0 +1,202 @@
+基础文件操作指令：
+
+ 1319  cd 
+ 1320  ls -l
+ 1321  ls -a
+ 1322  ls -l -a
+ 1323  ls -la 
+ 1324  ls  -l  qds
+ 1325  ls  /
+ 1326  pwd
+ 1327  ls
+ 1328  cd 音乐
+ 1329  cd ../图片
+ 1330  cd  /
+ 1331  ls
+ 1332  cd
+ 1333  ls
+ 1334  cd AID/month02
+ 1335  ls
+ 1336  cd day17
+ 1337  ls
+ 1338  touch a.py file.txt
+ 1339  ls
+ 1340  mkdir dir1 dir2
+ 1341  ls
+ 1342  cd
+ 1343  ls
+ 1344  cd 文档
+ 1345  ls
+ 1346  touch file.txt a.py
+ 1347  mkdir dir1 dir2
+ 1348  ls
+ 1349  rm -rf a.py dir1
+ 1350  ls
+ 1351  touch a.py b.py
+ 1352  mkdir inner 
+ 1353  ls
+ 1354  cp a.py b.py dir2
+ 1355  ls
+ 1356  ls dir2
+ 1357  cp -r inner dir2
+ 1358  ls dir2
+ 1359  ls
+ 1360  mv file.txt  inner
+ 1361  ls
+ 1362  ls inner
+ 1363  ls
+ 1364  cp a.py b.py ..
+ 1365  cd ..
+ 1366  ls
+ 1367  cd 文档
+ 1368  ls
+ 1369  mv ../qds  .
+ 1370  ls
+ 1371  ls  ..
+ 1372  rm ../a.py  ../b.py
+ 1373  ls ..
+ 1374  ls
+ 1375  cp a.py demo.py
+ 1376  ls
+ 1377  mv b.py hello.py
+ 1378  ls
+ 1379  touch project_log_28843584.log
+ 1380  ls
+ 1381  cp project_log_28843584.log inner
+ 1382  ls
+ 1383  touch demo1.py 
+ 1384  ls
+ 1385  cp demo1.py dir2/
+ 1386  cd /home/tarena/文档
+ 1387  ls
+ 1388  touch sfile.py 
+ 1389  touch file1.txt file_a.txt
+ 1390  ls
+ 1391  mv  *.py  qds
+ 1392  ls
+ 1393  touch file2.txt
+ 1394  ls
+ 1395  rm file?.txt
+ 1396  ls
+ 1397  cd
+ 1398  cd AID/month02
+ 1399  ls
+ 1400  cd day17
+ 1401  ls
+ 1402  rm -r a.py file.txt 
+ 1403  rm -r dir*
+ 1404  ls
+ 1405  history 200
+ 1406  history 120 > 课上命令演示.txt
+
+
+文件内容显示和查找
+
+ 1410  ls
+ 1411  cat file_a.txt 
+ 1412  ls
+ 1413  grep "func03" demo.py
+ 1414  grep -n "func03" demo.py
+ 1415  grep  "post" demo.py
+ 1416  grep  "port" demo.py
+ 1417  grep -i  "port" demo.py
+ 1418  ls
+ 1419  cd
+ 1420  ls
+ 1421  cd AID
+ 1422  ls
+ 1423  cd month0
+ 1424  cd month02
+ 1425  ls
+ 1426  find . -name demo09.py
+ 1427  find . -name demo.py
+ 1428  pwd
+ 1429  ls
+ 1430  ls day01
+ 1431  find . -name 1.txt
+ 1432  ls
+ 1433  cd -
+ 1434  d
+ 1435  cd
+ 1436  cd  文档
+ 1437  grep  "HELLO"
+ 1439  ls
+ 1440  ls | grep "demo"
+ 1441  ls /usr/bin
+ 1442  ls /usr/bin | grep "python"
+ 1443  ps -u
+ 1444  ps -u | grep "server"
+
+
+文件压缩解压
+
+ 1446  zip -r file.zip demo.py inner
+ 1447  ls
+ 1448  unzip file.zip 
+ 1449  ls
+ 1450  unzip file.zip -d inner
+ 1451  ls
+ 1452  tar -czf file.tar.gz demo.py  inner
+ 1453  ls
+ 1454  tar -cjf file.tar.bz2 demo.py  inner
+ 1455  ls
+ 1456  tar -xvf file.tar.gz 
+ 1457  tar -xvf file.tar.gz -C inner
+ 1458  cd
+ 1459  cd AID/month02/day17
+ 1460  ls
+ 1461  history 100 >> 课上命令演示.txt 
+
+
+权限管理
+
+ 1462  cd
+ 1463  cd  /
+ 1464  ls
+ 1465  touch file.txt
+ 1466  sudo touch file.txt
+ 1467  ls
+ 1468  rm file.txt 
+ 1469  sudo rm file.txt
+ 1470  ls
+ 1471  cd
+ 1472  cd 文档
+ 1473  ls -l
+ 1474  ls
+ 1475  chmod a-w demo.py 
+ 1476  ls -l
+ 1477  chmod u+w demo.py 
+ 1478  ls -l
+ 1479  chmod u-w demo.py 
+ 1480  chmod u-r demo.py 
+ 1481  cat demo.py 
+ 1482  ls -l
+ 1483  chmod u=rw- demo.py 
+
+
+打印显示
+ 1485  echo "hello world"
+ 1486  echo -n "hello world"
+ 1487  echo hello world
+ 1488  date
+ 1489  history 10
+ 1490  ls
+ 1491  tree
+ 1492  ls
+ 1493  ls -l
+ 1494  ls -l > file.txt
+ 1495  ls
+ 1496  cat file.txt 
+ 1497  date > file.txt 
+ 1498  cat file.txt 
+ 1499  ls -l >> file.txt 
+ 1500  cat file.txt 
+ 1501  cd 
+ 1502  cd AID/month02/day17
+
+shutdown -r
+shutdown +10
+ln -s /home/tarena/文档/demo.py  demo
+
+
+

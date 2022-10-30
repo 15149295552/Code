@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM元素绑定时间</title>
+</head>
+<body>
+    <h1 id="con"></h1>
+    <!-- <button onclick="func();" id="btn">这是一个按钮</button> -->
+    <button id="btn">这是一个按钮</button>
+    <script>
+        function func(){
+            var h1 = document.getElementById("con");
+            h1.innerHTML = "出现内容";
+        }
+
+        var btn = document.getElementById("btn");
+        // 将函数赋值给 节点对象.事件  不能传参
+        btn.onclick = func;
+
+        // 使用匿名函数实现也可以
+        // btn.onclick = function (){
+        //     var h1 = document.getElementById("con");
+        //     h1.innerHTML = "出现内容";
+        // }
+    </script>
+    
+</body>
+</html>

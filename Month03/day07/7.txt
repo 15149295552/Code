@@ -1,0 +1,49 @@
+前情回顾
+
+1. pymysql使用
+
+2. mysql总结
+
+3. 前端  后端
+
+   前端（前台应用，移动端，客户端）： 直接与用户交互
+
+   后端（服务端）： 后台服务器上,接收前端请求，处理请求，返回响应数据
+
+4. 前端基础
+   
+    HTML   CSS   JavaScript
+
+5. html
+   
+   标签 ： 单    双    属性
+   结构 ： html  head    title   
+                        meta 
+                  
+                body    h1-h6
+                        p
+                        span 
+                        hr  br
+                        div
+                        img (src  alt)
+                        a (href  target)
+
+
+
+网页请求方法： 
+1. get  用户从服务器获取内容
+2. post  提交数据得到一些提交结果
+
+html标签都有的属性 ：style   id    class 
+
+
+今日内容：
+1. html标签 ： 结构标签   表单标签
+2. CSS 使用方法
+3. CSS 语法特点
+4. CSS 选择器 
+
+作业：1. 今天的标签熟练
+     2. 今天选择器用法熟练
+
+参考网站： https://www.w3school.com.cn/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ操作标签内容</title>
+    <script src="js/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <div></div>
+
+    <form action="">
+        <input type="text" name="user" placeholder="用户名">
+        <input type="password" name="user" placeholder="密码">
+        <input type="button" onclick="func();">
+    </form>
+
+    <script>
+        // 设置标签内容，如果不传参就表示获取标签内容
+        $("div").text("<h1>text函数</h1>");
+        $("div").html("<h1>html函数</h1>");
+        
+        // 设置控件value值
+        $("input:eq(0)").val("admin")
+        
+        function func(){
+            // 对于表单控件选定一个控件调用val()
+            var res0 = $("input:eq(0)").val();
+            var res1 = $("input:eq(1)").val();
+            console.log(res0,res1)
+        }
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* 基础css样式文件  几个页面的通用设置 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../image/login_bg.jpg");
+    background-size:cover;
+    /* 透明度设置 */
+    /* opacity: 0.5;  */
+}
+
+#head {
+    margin-top: 20px;
+}
+
+#center {
+    width: 500px;
+    margin: 80px auto;   
+}
+
+form div{
+    height: 80px;
+}
+
+/* 让文字可以右对齐 */
+form span{
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+    font-size: 25px;
+}
+
+form input{
+    height: 36px;
+    width: 300px;
+}
+
+.input-btn input{
+    width: 100px;
+    border: hidden;
+    border-radius: 2px;
+    margin-left: 115px;
+}
+
+form img{
+    position: relative;
+    right: 47px;
+    top:12px;
+    height: 34px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}

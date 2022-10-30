@@ -1,0 +1,131 @@
+前情回顾
+
+1. 聚合操作
+
+聚合函数：avg()  sum()  max()  min()  count()
+分组 :  group by
+聚合筛选 ： having 
+去重 ： distinct
+
+2. 窗口函数
+
+函数 over 窗口 
+
+window  窗口 as (partition by 字段 order by 字段)
+
+
+3. 索引
+
+提高查询效率 --》 Btree
+
+分类 ： 普通  唯一   主键
+
+create index 
+
+4. 外键约束
+
+所有数据放在一个表 --》 数据冗余
+表拆分，从表设计关系字段 --》 关系字段数据不合理
+外键约束 --》 某些情况影响效率
+
+constraint 起名字
+foreign key (外键字段)
+references 主表(主键)
+级联动作
+
+5. 表关系
+一对多
+多对多 --> 独立的关系表
+E-R
+
+练习：
+
+create table class(
+    cid int primary key auto_increment,
+    caption char(4) not null
+);
+                  
+create table teacher(
+    tid int primary key auto_increment,
+    tname varchar(32) not null
+);
+                    
+create table student(
+    sid int primary key auto_increment,
+    sname varchar(32) not null,
+    gender enum('male','female','others') not null default 'male',
+    class_id int,
+    foreign key(class_id) references class(cid) 
+    on update cascade on delete cascade
+);
+                    
+create table course(
+    cid int primary key auto_increment,
+    cname varchar(16) not null,
+    teacher_id int,
+    foreign key(teacher_id) references teacher(tid)
+    on update cascade on delete cascade
+);
+                   
+create table score(
+    sid int primary key auto_increment,
+    student_id int,
+    course_id int,
+    number int(3) not null,
+    foreign key(student_id) references student(sid)
+    on update cascade on delete cascade,
+    foreign key(course_id) references course(cid)
+    on update cascade on delete cascade
+);
+                   
+insert into class(caption) values('三年一班'),('三年二班'),('三年三班');
+insert into teacher(tname) values('魏老师'),('祁老师'),('小泽老师');
+insert into student(sname,gender,class_id) values('钢蛋','female',1),('铁锤','female',1),('山炮','male',2),('彪哥','male',3),('虎子','male',3),('妞妞','female',2),('建国','male',2);
+insert into course(cname,teacher_id) values('生物',1),('体育',1),('物理',2);
+insert into score(student_id,course_id,number) values(1,1,60),(1,2,59),(2,2,100),(3,2,78),(4,3,66),(2,3,78),(5,2,77),(6,1,84),(7,1,79),(5,3,80),(3,1,59);
+
+1. 查询每位老师教授的课程数量
+2. 查询各科成绩最高和最低的分数,形式 : 课程ID  课程名称 最高分  最低分
+3. 查询平均成绩大于85分的所有学生学号,姓名和平均成绩
+4. 查询课程编号为2且课程成绩在80以上的学生学号和姓名
+5. 查询各个课程及相应的选修人数
+6. 查询每位学生的姓名，所在班级和各科平均成绩
+
+
+
+select ... from A 
+left join B 
+on A.id = B.a_id 
+left join C 
+on C.id = a.c_id
+....
+
+
+函数练习：
+使用books表，请编写一个函数，参数传入2本书的名字
+返回两本书的价格之差
+
+
+
+
+
+cookie 
+
+推荐扩展 : 数据结构
+画图工具 ：网站地址  draw.io
+
+
+今日内容：
+1. 多表查询
+2. 视图
+3. 函数和存储过程
+
+作业： 1. 今天的语句熟练
+      2. 已学的sql总结梳理
+      3. books表，使用存储过程完成，将2020年以
+      前出版的图书价格增加3元，参数传入一个作家
+      的名字，将该作家的图书，在此基础上再涨2元，
+      按照图书价格打印出图书信息，只要书名，
+      作者和价格即可
+      4. 函数   类 （继承 封装 跨类调用）
+      5. leetcode  牛客网

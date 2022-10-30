@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form input{
+            width: 300px;
+            height: 40px;
+            margin-bottom: 25px;
+            margin-left: 15px;
+        }
+        form div span{
+            font-size: 15px;
+            color:#ff5555
+        }
+    </style>
+
+
+</head>
+<body>
+    <form action="">
+        <div>
+            用户名 <input type="text" name="username" id="user" placeholder="请设置用户名">
+            <span id="user-err"></span>
+        </div>
+        <div>
+            手机号 <input type="text" name="phone" id="tel" placeholder="用于登录和找回密码">
+        </div>
+        <div>
+            <input type="submit" value="提交">
+        </div>
+    </form>
+
+    <script>
+        var usr = document.forms[0].username 
+        var userErr = document.getElementById("user-err");
+
+        usr.onfocus = function (){
+            userErr.innerHTML = "";
+            usr.style.border = "solid 2px #000000";
+        }
+
+        usr.onblur = function(){
+            var con = usr.value;
+            if (con.length < 5){
+                usr.style.border = "solid 2px #ff5555";
+                userErr.innerHTML = "用户名长度太短";
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

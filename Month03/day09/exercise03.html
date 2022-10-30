@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习3</title>
+    <style>
+        form {
+            width: 400px;
+            padding: 15px;
+            border: solid 2px #cccccc;
+        }
+
+        form h3{
+            width: 80px;
+            border-bottom: solid 2px black;
+        }
+        form input{
+            height: 30px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        #vc {
+            width: 25%;
+        }
+        #dc {
+            width: 60%;
+        }
+        button{
+            height: 34px;
+            background-color: #4b95ff;
+            color:#fff;
+            border: hidden;
+            border-radius: 3px;
+        }
+        #btn {
+            width: 100px;
+            position: relative;
+            left : 30px;
+        }
+        /* 注册按钮 */
+        #sub {
+            width: 100%;
+            position: relative;
+            top : 30px;
+        }
+        button:hover{
+            color:#2a75fe
+        }
+        #read {
+            width: 5%;
+            height: 20px;
+            vertical-align:middle;
+        }
+        form span{
+            font-size: 12px;
+            color: #999999;
+        }
+
+        #xy a{
+            color:red;
+            text-decoration: none;
+        }
+        #lg a{
+            color:#2a75fe;
+            text-decoration: none;
+            font-style: italic;
+        }
+        img,#vc-info{
+            margin-left: 20px;
+            vertical-align:middle;
+        }
+
+        form div{
+            margin-top: 50px;
+        }
+
+        form div input{
+            margin-top: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>手机注册</h3>
+        <input type="text" name="tel" placeholder="手机号">
+        <input type="password" name="pwd" placeholder="密码">
+        <input type="password" name="pwd2" placeholder="确认密码">
+        <input id="vc" type="text" name="vc" placeholder="验证码">
+        <img src="image/validateCode.jpeg" alt="">
+        <span id="vc-info">看不清楚？换一张</span>
+        <input id="dc" type="text" name="dc" placeholder="动态码">
+        <button id="btn">获取动态码</button>
+        <button id="sub">注册</button>
+        <div>
+        <input type="checkbox" name="sy" id="read" checked> <span>我已阅读并同意</span> 
+        <span id="xy"><a href="https://www.tmooc.cn/user-agreement/index.shtml">《用户注册协议》</a></span>
+        <span id="lg">已有账号? <a href="https://uc.tmooc.cn/login/jumpTologin">立即登录</a></span>
+        </div>
+    </form>
+    
+</body>
+</html>

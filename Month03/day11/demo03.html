@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节点对象内容操作</title>
+</head>
+<body>
+    <div id="text" onclick="changeContent();">庆祝党的十九大</div>
+
+    <script>
+        function changeContent(){
+            var h1=document.getElementById("text");
+            // 获取h1对象对应的标签内容/修改标签内容
+            console.log(h1.innerText)
+            //innerText所有内容都作为文本内容处理
+            // h1.innerText="<h1>热烈庆祝二十大</h1>";
+            
+            // innerHTML可以识别字符串中html的标签语法
+            h1.innerHTML="<h1>热烈庆祝二十大</h1>";
+        }
+    </script>
+    
+</body>
+</html>

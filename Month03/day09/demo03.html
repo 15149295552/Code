@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        #one {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            /* float:right; */
+        }
+        /* 如果one不设置浮动则，单纯浮动不会跨行。如果one设置了浮动那么该元素可以视作先在标准流中已经处于第一行，然后再浮动起来自然也在第一行浮动 */
+        #two {
+            width: 180px;
+            height: 180px;
+            background-color: blue;
+            float:right;
+        }
+        /* 行内元素也可以设置浮动，设置了的元素具备一定的行内块特点，可以共享一行，设置宽高 */
+        span{
+            float:left;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <span>我是一个行内元素</span>
+</body>
+</html>

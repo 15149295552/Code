@@ -1,0 +1,29 @@
+/* search.html页面特有设置 */
+form input{
+    width: 450px;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+form img{
+    cursor: pointer;
+}
+
+#input-word {
+    position: relative;
+}
+
+/* button负责提交，覆盖图片看山去像是在点击图片 */
+form button{
+    width: 80px;
+    height: 40px;
+    border: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    position:absolute;
+    right:270px;
+    top:158px;
+    z-index: 999;
+    cursor: pointer;
+}

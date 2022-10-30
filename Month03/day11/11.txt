@@ -1,0 +1,83 @@
+前情回顾
+
+1. 绝对定位 
+    子绝父相 
+
+2. 固定定位
+
+3. JS 
+   绑定事件
+   文档内嵌  script
+   外部连接  script
+
+4.js 语法
+
+  变量 ： var
+  数据类型 ：数字  字符串 布尔 数组  对象  null
+  数据类型转换 ： toString()  Number()
+                隐式转换
+  字符串和数组常用方法 ：拼接 切片 取值
+  运算符 ： ++  --   ===   &&  ||  !
+
+5. 流程控制语句
+
+  if(){}else if(){}else{} 
+
+  while(){}   do{}while()
+
+  for(语句1;语句2;语句3){}
+
+  break  continue 
+
+
+练习：
+编写一个函数，参数传入一个年 月 日 三个整数。
+返回该日期是一年中的第几天
+
+
+练习：在昨天练习2的基础上完成
+点击关闭按钮让广告消失
+
+块元素消失样式 ： display:none;
+
+
+DOM操作 
+
+步骤： 1.查找节点对象  2.进行相应操作
+
+查找节点对象：
+    getElementById()
+    getElementsByTagName()
+    getElementsByClassName()
+
+    document.forms
+
+内容操作
+    element.innerHTML 
+    element.innerText
+
+属性操作
+    element.属性名
+    element.getAttribute(属性名)
+    element.setAttribute(属性名,值)
+
+样式操作
+    element.style.样式名称
+
+
+jQuery官网 ：https://jquery.com/
+
+
+今日内容：
+1. js函数
+2. DOM操作 
+   获取节点对象  操作节点对象
+
+3. jQuery 选择器 
+   
+   标签内容操作
+
+作业：
+1. dom操作和jq操作熟悉
+2. 模拟百度注册的用户名密码框，当用户名少于5
+个的字符时设计一个提示信息

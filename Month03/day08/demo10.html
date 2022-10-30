@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            /* border-style: dashed;
+            border-width: 3px;
+            border-color:red; */
+            /* solid实线  dashed虚线 double双线 dotted点线 */
+            border: solid 3px red;
+            /* 选边设置边框 top left right bottom*/
+            /* border-top: solid 3px red; */
+
+            /* 边框圆角设置 */
+            /* border-radius: 50%; */
+            /* 如果超过一个值则从左上角开始顺时针设置，没有写的角与对角相同 */
+            border-radius: 20px 30px 40px 50px;
+        }
+        button {
+            /* 隐藏边框 */
+            border:hidden;
+            background-color:rosybrown;
+        }
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <button>按钮</button>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>表单控件</title>
+    </head>
+
+    <body>
+        <form action="" method="">
+            <!-- name属性表示提交内容所起的名字，后端方便以此识别数据含义 value表示内容初始值，placeholder表示提示信息-->
+            文本框：
+            <input
+                type="text"
+                name="user"
+                value=""
+                placeholder="请输入用户名"
+                maxlength="10"
+                minlength="4" />
+            <br />
+            密码框：
+            <input type="password" name="pwd" placeholder="密码" />
+            <br />
+            <!-- value表示按钮提示内容 -->
+            提交按钮：
+            <input type="submit" value="确定" />
+            <!-- button放在form中也表示提交 -->
+            <button>提交内容</button>
+        </form>
+    </body>
+</html>

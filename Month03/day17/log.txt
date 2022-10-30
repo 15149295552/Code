@@ -1,0 +1,7 @@
+用户明:tarena
+2022年 10月 24日 星期一 17:00:30 CST
+
+总用量 5
+-rwxrwxrwx 1 root root  893 10月 24 16:59 17.txt
+-rwxrwxrwx 1 root root 3313 10月 24 16:59 课上命令演示.txt
+-rwxrwxrwx 1 root root   61 10月 24 17:00 log.txt

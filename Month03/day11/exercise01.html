@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习1</title>
+</head>
+<body>
+    <script>
+        /*练习：编写一个函数，参数传入一个年 月 日 三个整数。
+        返回该日期是一年中的第几天 */
+        function getDays(year,month,day){
+            // 判断是平年还是闰年
+            var flag = 0;
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+                flag++;
+            }
+            // 1-12月的天数
+            var days = [31,28+flag,31,30,31,30,31,31,30,31,30,31];
+            var res = 0;
+            for(var i=0;i<month-1;i++){
+                res += days[i];
+            }
+            return res + day;
+        }
+        console.log(getDays(2020,3,1));
+        
+    </script>
+
+</body>
+</html>

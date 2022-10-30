@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用方法</title>
+
+    <!--内嵌 style 标签中写css代码 选择器+属性-->
+    <style>
+        /* 作用于所有h1标签 */
+        h1 {
+           color:blue;
+           font-size: 50px; 
+        }
+    </style>
+
+    <!-- 外联样式 导入css样式文件 -->
+    <link rel="stylesheet" href="demo.css">
+
+</head>
+
+<body>
+    <!-- 行内样式  css属性键值对以字符串形式赋值给style-->
+    <h1 style="color:red;font-size:40px;">行内样式修饰部分</h1>
+    <h1>内嵌样式修饰部分</h1>
+    <h1>内嵌样式修饰部分</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum tempore beatae aut laborum modi nam, libero fugit est neque distinctio tenetur eius laboriosam odio voluptatem! Nam quis esse ea placeat.</p>
+</body>
+
+</html>

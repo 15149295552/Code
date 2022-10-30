@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习1</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #head {
+            height: 80px;
+            border-top: solid 5px #ff8500;
+            background-color: #fcfcfc;
+        }
+        li {
+            display: inline-block;
+            /* width: 120px; */
+            font-size: 20px;
+            font-family: "宋体";
+            text-align: center;
+            line-height: 80px;
+            /* 通过内边距撑元素宽度，让文字距离一致 */
+            padding: 0px 30px;
+        }
+
+        li:hover {
+            color:#ff841e;
+            background-color: #edeef0;
+        }
+        a:hover{
+            color:#ff841e;
+        }
+
+        a{  
+            color:#4c4c5c;
+            text-decoration: none;
+        }
+
+        #next {
+            height: 80px;
+            background-color: #cd0506;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="head">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">手机新浪网</a></li>
+            <li><a href="">移动客户端</a></li>
+        </ul>
+    </div>
+    <div id="next"></div>
+</body>
+</html>

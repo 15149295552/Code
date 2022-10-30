@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery设置属性</title>
+    <style>
+        .one {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .two {
+            border: 2px solid blue;
+        }
+    </style>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="red" class="one"></div>
+    
+    <img src="image/1.jpeg" alt="" title="迪丽热巴">
+
+    <script>
+        // 获取标签属性值
+        console.log($("img").prop("src"));
+        // 设置属性
+        $("img").prop("src","image/2.jpeg");
+        // 删除属性
+        $("img").removeAttr("title");
+
+        // $("#red").prop("class","two");
+        
+        // 针对class进行值的设置
+        $("#red").addClass("two");
+        // $("#red").removeClass("one");
+
+        // 如果原来class有one值则删除，没有则添加
+        $("#red").toggleClass("one");
+        
+
+    </script>
+    
+    
+</body>
+</html>

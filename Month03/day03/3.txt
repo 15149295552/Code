@@ -1,0 +1,61 @@
+前情回顾
+
+1.基础语句 
+  运算符 ：算数   比较   逻辑
+  select col... from [tb] where ....
+  update  [tb] set col=val where ......
+  delete from  [tb] where ....
+
+2. 表结构修改
+  alter table [tb] add/modify/change/drop
+
+3. 时间类型 
+   datetime  date   time 
+  
+   now()   date()   datediff()
+
+4. 高级查询
+   
+   模糊查询 ： like    %  _ 
+   重命名 ： as 
+   排序 ： order by  
+   分页 ： limit   offset   
+   联合查询 ： union all
+   子查询 ： (select...) -> 表  值
+
+
+聚合练习： 基于books表
+1. 统计每位作家出版图书的平均价格
+2. 统计每个出版社出版图书数量
+3. 统计同一时间出版图书的最高价格和最低价格
+4. 筛选出那些出版过超过50元图书的出版社，
+并按照其出版图书的平均价格降序排序
+
+
+表关系设计练习：
+根据所学 用户朋友圈表内容表，使其合理，假设现有如下内容需要存储：
+姓名 密码 电话  图片 内容  地点 时间 点赞  评论
+
+哪个用户发了什么朋友圈，被谁点赞评论了
+
+
+
+
+聚合函数：
+https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html
+
+窗口函数：
+https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html
+
+
+
+
+今日内容：
+1. 聚合查询
+2. 窗口函数 
+3. 索引
+4. 外键约束
+5. 表关系 
+
+作业：1.今天语句熟悉
+     2. 表关系设计

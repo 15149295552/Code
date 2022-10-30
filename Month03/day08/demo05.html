@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长度和颜色</title>
+    <style> 
+        div{
+            width: 400px;
+            height: 200px;
+            background-color: red;
+            font-size: 30px;
+        }
+        /* 文字大小是原文字的2倍 （宽高2倍） */
+        span {
+            font-size: 2em;
+        }
+
+        /* 相对父元素百分比大小 */
+        #inner {
+            width: 50%;
+            height: 50%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="inner"></div>
+    </div>
+    <hr>
+    <div>
+        <span>Lorem</span>  ipsum dolor, sit amet consectetur adipisicing elit. Placeat dignissimos numquam nam aspernatur eum! Corporis fugiat distinctio officia voluptas et odio accusamus laboriosam voluptatem, incidunt rem consectetur tempora laborum repudiandae!
+    </div>
+    
+</body>
+</html>

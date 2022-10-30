@@ -1,0 +1,1 @@
+[CommodityModel("屠龙刀", 10000, 1001), CommodityModel("金箍棒", 20000, 1002)]

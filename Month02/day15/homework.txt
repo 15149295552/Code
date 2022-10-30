@@ -1,0 +1,63 @@
+作业
+1. 当天练习独立完成
+2. 使用IterableHelper完成下列功能
+    -- 在商品列表中查找名称是倚天剑的商品
+    -- 在商品列表中查找编号是1003的商品
+    -- 在商品列表中查找所有价格大于等于10000的商品
+    -- 在商品列表中查找编号小于1003的商品数量
+
+class Commodity:
+    def __init__(self, cid=0, name="", price=0):
+    	self.cid = cid
+        self.name = name
+        self.price = price
+
+list_commodity_infos = [
+  Commodity(1001, "屠龙刀", 10000),
+  Commodity(1002, "倚天剑", 10000),
+  Commodity(1003, "金箍棒", 52100),
+  Commodity(1004, "口罩", 20),
+  Commodity(1005, "酒精", 30),
+]
+
+3:画出下列代码内存图
+map = [
+    [2,0,2,4],
+    [8,8,0,2],
+]
+# -- (1)
+item = map[0]
+item[0] = 4
+item[1] = 4
+item[2] = 0
+item[3] = 0
+print(map) # ?
+
+# -- (2)
+item = map[1][::-1]
+item[0] = 16
+item[1] = 2
+item[2] = 0
+item[3] = 0
+print(map) # ?
+map[1][::-1] = item
+print(map) # ?
+
+4. (选做)2048核心算法
+--向上移动：矩阵转置、调用向左移动、矩阵转置
+--向下移动：矩阵转置、调用向右移动、矩阵转置
+
+5. 九点抖音直播:面向对象架构设计
+
+
+
+
+
+
+
+
+
+
+
+
+

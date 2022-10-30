@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f11c4808-dcc6-4069-afe2-859f0982c20b" name="Changes" comment="no message">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ktbj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ktbj.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/27984bd1019d565490d0b9d3ce0c087912988c01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fe6451d230dc2072b058219fd260f62b89726f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da0f8e7e38497c63c7b9311a51303d7a9ef5c7bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ead5cfa4a3e0f2660206bafa0d6fb7e3a7f01b40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1660366770" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1660366769" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2D4pHpfKFxczY2uXrNh5BOGraVL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/bf/JETBRAINS-bf/pcbf",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bf\Github\ktbj\Day16" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bf\Github\ktbj\test" />
+      <recent name="D:\bf\Github\ktbj" />
+      <recent name="D:\bf\Github\ktbj\Day12" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.homework">
+    <configuration name="demo02_re" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ktbj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day18" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day18/demo02_re.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="heroImageSpider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ktbj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day18" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day18/heroImageSpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="homework" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ktbj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="homework.txt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ktbj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\bf\Github\ktbj\homework.txt" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ktbj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.homework" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.homework.txt" />
+        <item itemvalue="Python.heroImageSpider" />
+        <item itemvalue="Python.demo02_re" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f11c4808-dcc6-4069-afe2-859f0982c20b" name="Changes" comment="" />
+      <created>1659968125991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659968125991</updated>
+      <workItem from="1659968128927" duration="633000" />
+      <workItem from="1660006030394" duration="5443000" />
+      <workItem from="1660012983591" duration="52000" />
+      <workItem from="1660013108972" duration="38000" />
+      <workItem from="1660013220634" duration="157000" />
+      <workItem from="1660013388226" duration="3476000" />
+      <workItem from="1660024769962" duration="10764000" />
+      <workItem from="1660042280683" duration="876000" />
+      <workItem from="1660050021152" duration="1596000" />
+      <workItem from="1660090482859" duration="10999000" />
+      <workItem from="1660110629666" duration="354000" />
+      <workItem from="1660111020978" duration="137000" />
+      <workItem from="1660111170092" duration="12866000" />
+      <workItem from="1660129967933" duration="278000" />
+      <workItem from="1660138290903" duration="1245000" />
+      <workItem from="1660139608141" duration="1342000" />
+      <workItem from="1660179288531" duration="8016000" />
+      <workItem from="1660197696707" duration="12173000" />
+      <workItem from="1660212024390" duration="142000" />
+      <workItem from="1660221582753" duration="637000" />
+      <workItem from="1660264475409" duration="9479000" />
+      <workItem from="1660283544778" duration="4662000" />
+      <workItem from="1660289781761" duration="5312000" />
+      <workItem from="1660356009563" duration="2737000" />
+      <workItem from="1660523547135" duration="9245000" />
+      <workItem from="1660542916093" duration="12178000" />
+      <workItem from="1660560140002" duration="2318000" />
+      <workItem from="1660568582739" duration="747000" />
+      <workItem from="1660610829950" duration="10737000" />
+      <workItem from="1660629487418" duration="3311000" />
+      <workItem from="1660633143245" duration="4480000" />
+      <workItem from="1660646857454" duration="4972000" />
+      <workItem from="1660655229084" duration="608000" />
+      <workItem from="1660697242058" duration="6884000" />
+      <workItem from="1660706295583" duration="2358000" />
+      <workItem from="1660715485765" duration="15249000" />
+      <workItem from="1660741837673" duration="1584000" />
+      <workItem from="1660783690367" duration="8971000" />
+      <workItem from="1660802144557" duration="13879000" />
+      <workItem from="1660870436440" duration="1293000" />
+      <workItem from="1660871771473" duration="7302000" />
+      <workItem from="1660888766081" duration="10079000" />
+      <workItem from="1660960600710" duration="3454000" />
+      <workItem from="1661055479366" duration="692000" />
+      <workItem from="1661130083876" duration="9515000" />
+      <workItem from="1661147851238" duration="13811000" />
+      <workItem from="1661251126857" duration="5350000" />
+      <workItem from="1661302279268" duration="9117000" />
+      <workItem from="1661311484165" duration="1345000" />
+      <workItem from="1661320590090" duration="2018000" />
+      <workItem from="1661322641733" duration="320000" />
+      <workItem from="1661322971838" duration="48000" />
+      <workItem from="1661323028476" duration="11557000" />
+      <workItem from="1661343703798" duration="108000" />
+      <workItem from="1661343845784" duration="84000" />
+      <workItem from="1661388100047" duration="11485000" />
+      <workItem from="1661406955845" duration="13803000" />
+      <workItem from="1661475360957" duration="6499000" />
+      <workItem from="1661493741285" duration="10481000" />
+      <workItem from="1661682899823" duration="3791000" />
+      <workItem from="1661734490880" duration="1069000" />
+      <workItem from="1661920364783" duration="2893000" />
+      <workItem from="1662003446781" duration="231000" />
+      <workItem from="1662004035859" duration="246000" />
+      <workItem from="1662004312231" duration="18000" />
+      <workItem from="1662004681880" duration="139000" />
+      <workItem from="1662021660569" duration="586000" />
+      <workItem from="1662022349884" duration="154000" />
+      <workItem from="1662251937281" duration="2192000" />
+      <workItem from="1662373452041" duration="5430000" />
+      <workItem from="1662449790064" duration="213000" />
+      <workItem from="1662463121691" duration="366000" />
+      <workItem from="1662515386756" duration="108000" />
+      <workItem from="1662522415302" duration="1028000" />
+      <workItem from="1662524342796" duration="1688000" />
+      <workItem from="1663637905444" duration="1635000" />
+    </task>
+    <task id="LOCAL-00001" summary="no message">
+      <created>1659968624928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659968624928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="no message">
+      <created>1660372717367</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372717367</updated>
+    </task>
+    <task id="LOCAL-00003" summary="no message">
+      <created>1660372881914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372881914</updated>
+    </task>
+    <task id="LOCAL-00004" summary="no message">
+      <created>1660372890450</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372890450</updated>
+    </task>
+    <task id="LOCAL-00005" summary="no message">
+      <created>1660372914120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372914120</updated>
+    </task>
+    <task id="LOCAL-00006" summary="no message">
+      <created>1660372969581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372969581</updated>
+    </task>
+    <task id="LOCAL-00007" summary="no message">
+      <created>1660372982170</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660372982170</updated>
+    </task>
+    <task id="LOCAL-00008" summary="no message">
+      <created>1660373004018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660373004018</updated>
+    </task>
+    <task id="LOCAL-00009" summary="no message">
+      <created>1660373111324</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660373111324</updated>
+    </task>
+    <task id="LOCAL-00010" summary="no message">
+      <created>1662004789034</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662004789034</updated>
+    </task>
+    <task id="LOCAL-00011" summary="no message">
+      <created>1662252094329</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662252094329</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="no message" />
+    <option name="LAST_COMMIT_MESSAGE" value="no message" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ktbj$Demo6.coverage" NAME="Demo6 Coverage Results" MODIFIED="1660123282674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day09" />
+    <SUITE FILE_PATH="coverage/ktbj$main.coverage" NAME="main Coverage Results" MODIFIED="1660297270115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day11/my_project02" />
+    <SUITE FILE_PATH="coverage/ktbj$HomeWork02.coverage" NAME="HomeWork02 Coverage Results" MODIFIED="1661414819133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day04" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo3.coverage" NAME="Demo3 Coverage Results" MODIFIED="1660811265420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day13" />
+    <SUITE FILE_PATH="coverage/ktbj$test.coverage" NAME="test Coverage Results" MODIFIED="1661506323048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise03.coverage" NAME="exercise03 Coverage Results" MODIFIED="1661309221747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day03" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1661133323078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
+    <SUITE FILE_PATH="coverage/ktbj$demo02_re.coverage" NAME="demo02_re Coverage Results" MODIFIED="1662252178596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day18" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise3.coverage" NAME="exercise3 Coverage Results" MODIFIED="1660965859410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day14" />
+    <SUITE FILE_PATH="coverage/ktbj$gameStart.coverage" NAME="gameStart Coverage Results" MODIFIED="1660723151808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day12/PlaneWar" />
+    <SUITE FILE_PATH="coverage/ktbj$homework_txt.coverage" NAME="homework.txt Coverage Results" MODIFIED="1662375413063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ktbj$demo_csv_read.coverage" NAME="demo_csv_read Coverage Results" MODIFIED="1661309783576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day16" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1660873991429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day14" />
+    <SUITE FILE_PATH="coverage/ktbj$homework.coverage" NAME="homework Coverage Results" MODIFIED="1662378638091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ktbj$demo05_generator.coverage" NAME="demo05_generator Coverage Results" MODIFIED="1660878452472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day13" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo1.coverage" NAME="Demo1 Coverage Results" MODIFIED="1661131498342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
+    <SUITE FILE_PATH="coverage/ktbj$fuxi.coverage" NAME="fuxi Coverage Results" MODIFIED="1661773974027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_1/Day19" />
+    <SUITE FILE_PATH="coverage/ktbj$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1660551843839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Plane War" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise6.coverage" NAME="exercise6 Coverage Results" MODIFIED="1660267940340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day10" />
+    <SUITE FILE_PATH="coverage/ktbj$heroImageSpider.coverage" NAME="heroImageSpider Coverage Results" MODIFIED="1661687911368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day18" />
+    <SUITE FILE_PATH="coverage/ktbj$skill_manager.coverage" NAME="skill_manager Coverage Results" MODIFIED="1660296914871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day11/my_project02/common/skill_system" />
+    <SUITE FILE_PATH="coverage/ktbj$code01_2.coverage" NAME="code01_2 Coverage Results" MODIFIED="1661739248403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_1/Day17/TestWork" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo1__1_.coverage" NAME="Demo1 (1) Coverage Results" MODIFIED="1660095813578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day09" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo4.coverage" NAME="Demo4 Coverage Results" MODIFIED="1660871232939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day13" />
+    <SUITE FILE_PATH="coverage/ktbj$demo06_generator_function.coverage" NAME="demo06_generator_function Coverage Results" MODIFIED="1660876937095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day13" />
+    <SUITE FILE_PATH="coverage/ktbj$demo04_statement.coverage" NAME="demo04_statement Coverage Results" MODIFIED="1660966827579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day02" />
+    <SUITE FILE_PATH="coverage/ktbj$demo01_container.coverage" NAME="demo01_container Coverage Results" MODIFIED="1661131346973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day04" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1661149140374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise2.coverage" NAME="exercise2 Coverage Results" MODIFIED="1660815590869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day13" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise__1_.coverage" NAME="exercise (1) Coverage Results" MODIFIED="1660874779563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day14" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise08.coverage" NAME="exercise08 Coverage Results" MODIFIED="1661414693295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day03" />
+    <SUITE FILE_PATH="coverage/ktbj$demo01_scope.coverage" NAME="demo01_scope Coverage Results" MODIFIED="1660009735437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day07" />
+    <SUITE FILE_PATH="coverage/ktbj$demo05_loop_break.coverage" NAME="demo05_loop_break Coverage Results" MODIFIED="1661256179583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day03" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo5.coverage" NAME="Demo5 Coverage Results" MODIFIED="1660205836740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day10" />
+    <SUITE FILE_PATH="coverage/ktbj$Demo2.coverage" NAME="Demo2 Coverage Results" MODIFIED="1661139780495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
+    <SUITE FILE_PATH="coverage/ktbj$demo_write.coverage" NAME="demo_write Coverage Results" MODIFIED="1661310974200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day16" />
+    <SUITE FILE_PATH="coverage/ktbj$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1660789861221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day12/PlaneWar" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise07.coverage" NAME="exercise07 Coverage Results" MODIFIED="1661414686763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day03" />
+    <SUITE FILE_PATH="coverage/ktbj$code02.coverage" NAME="code02 Coverage Results" MODIFIED="1661743535209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_1/Day17/TestWork" />
+    <SUITE FILE_PATH="coverage/ktbj$hvl.coverage" NAME="hvl Coverage Results" MODIFIED="1661398776700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day16/HouseManageSystem" />
+    <SUITE FILE_PATH="coverage/ktbj$code04.coverage" NAME="code04 Coverage Results" MODIFIED="1661780505170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_1/Day17/TestWork" />
+    <SUITE FILE_PATH="coverage/ktbj$list_helper.coverage" NAME="list_helper Coverage Results" MODIFIED="1660296911350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day11/my_project02/common" />
+    <SUITE FILE_PATH="coverage/ktbj$hcl.coverage" NAME="hcl Coverage Results" MODIFIED="1661328183739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day16/HouseManageSystem" />
+    <SUITE FILE_PATH="coverage/ktbj$demo04_loop.coverage" NAME="demo04_loop Coverage Results" MODIFIED="1661255480611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day03" />
+    <SUITE FILE_PATH="coverage/ktbj$exercise5.coverage" NAME="exercise5 Coverage Results" MODIFIED="1660122768069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day09" />
+    <SUITE FILE_PATH="coverage/ktbj$demo01_baiduSpider.coverage" NAME="demo01_baiduSpider Coverage Results" MODIFIED="1661683253872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day18" />
+  </component>
+</project>

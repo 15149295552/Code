@@ -1,0 +1,202 @@
+二手房项目实践
+
+1 项目需求
+    数据: csv文件中存储50条房源数据
+    操作:
+        增加/修改/删除/查询/查看/读取/存储
+
+2 项目分析
+    1 csv文件中的数据读取与写入
+    2 项目呈现(展示):
+        小程序/app/web页面/GUI界面
+        当前项目使用 终端控制台 展示
+    3 项目如何现实?
+        用户界面展示模块: 与用户交互, 如: 输入/显示
+        业务处理模块: 显示核心的业务功能, 如: 增加/修改
+        数据管理模块: 定义数据的结构, 如: 二手房的相关特征(名称/价格)
+    4 各模块如何交互?
+        用户界面: 调用业务处理模块中的对应功能
+        业务处理: 调用数据管理模块,获取模型对象
+        数据管理: 负责提供数据的结构
+
+3 项目设计
+    项目架构: MVC
+    数据模型类 HouseModel
+        定义数据的结构:
+            编号: id
+            名字: name
+            户型: type
+            面积: area
+            单价: uprice
+            总价: tprice
+
+    界面视图类 HouseView
+        与用户交互:
+            功能显示: diaplay_menu
+            用户选择: user_choice
+            添加房源数据: add_house_data
+            显示房源数据: show_house_data
+            修改房源数据: update_house_data
+            删除房源数据: delete_house_data
+            查询房源数据: find_house_data (name/type/area/uprice/tpirce)
+            房源数据排序: sort_house_data (area/uprice/tpirce)
+            退出房源系统: quit_house_system
+
+    逻辑控制类  HouseController
+        负责实现核心业务功能
+            1 读取csv文件数据: read_house_data_from_csv
+            2 添加房源数据: append_house_data
+            3 修改房源数据: modify_house_data
+            4 删除房源数据: remove_house_data
+            5 查询房源数据: query_house_data
+            6 房源数据排序: sorted_house_data
+            7 保存房源数据到csv文件: save_house_data_to_csv
+
+4 项目实现
+    (1) 数据模型类 HouseModel
+        定义数据的结构:
+            编号: id
+            名字: name
+            户型: type
+            面积: area
+            单价: uprice
+            总价: tprice
+
+        编号 id: 系统自生成
+        数据有效性校验(私有化 --> 写入方法):
+            area/uprice/tprice  (可读可写)   10:20
+
+    (2) 逻辑控制类  HouseController
+        负责实现核心业务功能
+            1 读取csv文件数据 read_house_data_from_csv
+                1 房源数据存储结构:
+                    结构1: [[id, name, type, area, uprice, tprice], ...]
+                    结构2: [房源对象1, 房源对象2, ...]   [使用]
+                2 仅存储房源信息数据,不要表头数据
+                    措施: 定义一个变量记录行号,当行号不为0时,存储房源数据
+                3 为了避免当前用户多次读取文件,造成数据的重复存储
+                    措施: 每次读取前,先清空之前存储的数据
+
+            2 添加房源数据: append_house_data
+                1 id 如何自生成?
+                    方案1: 基于时间戳 (id不连续) --> 操作不方便
+                    方案2: 基于csv文件数据的数量:
+                        获取存储在房源数据列表中的最后一个数据,获取id属性值
+
+                2 房源是数据如何获取?
+                    # 面向过程思想:
+                        append_house_data(name, type, area, uprice, tprice)
+                    # 面向对象思想:
+                        append_house_data(house_object)
+
+            3 删除房源数据: remove_house_data
+                1 依据什么数据来删除
+                    id: 唯一
+                2 查找删除后,返回怎么结果?实现在视图模块中证明是否完成删除?
+                    设置返回值: 删除成功,则返回True,否则返回False
+
+            4 修改房源数据: modify_house_data
+                1 根据什么数据来修改
+                    id: 唯一
+                2 修改的数据如何传入?
+                    方案1: 将6个数据作为参数传入 (面向过程的思想)
+                    方案2: 传入携带修改数据的房源对象 (面向对象的思想)
+                3 修改的结果如何返回?
+                    设置返回值: 修改成功,则返回True,否则返回False
+
+            5 查询房源数据: query_house_data
+                查询的数据: id/name/type/area/uprice/tprice
+                查询的结果: 获取满足条件的所有数据
+                结果的存储: [房源对象1, 房源对象2, ...]
+                查询的条件: lambada表达式
+
+            6 房源数据排序: sorted_house_data
+                1 根据什么数据排序?
+                    根据: area/uprice/tprice
+                    方式: 升序/降序
+                2 排序的方法?
+                    1 自定义: 冒泡排序
+                    2 list.sort(key=function, reverse=False)
+                    3 sorted(iterable, key=function, reverse=False)
+
+            7 保存房源数据到csv文件: save_house_data_to_csv
+                1 csv文件写入操作
+                2 存储的房源数据如何存储到csv文件?
+                    import csv
+                    f = open('文件', 'a')
+                    writer = csv.writer(f)
+                    # 单行写入
+                    writer.writerow(['数据1', ....])
+                    # 多行写入
+                    writer.writerows([['数据1', ....], ['数据1', ...]])
+                    f.close()
+                3 如何将之前存储的房源对象,转为列表存储?
+                    方案1: 遍历房源对象,将对应的对象属性存放在列表中.
+                    方法2: 房源对象.__dict__, 获取对象变量字典的值, 转为列表
+
+    (3) 界面视图类 HouseView
+        与用户交互:
+            (1) 功能显示: diaplay_menu
+                9个print
+
+            (2) 用户选择: user_choice
+                1 用户输入对应的序号
+                2 根据对应的序号调用对象的功能
+
+            (3) 添加房源数据: add_house_data
+                1 输入对应字段的数据
+                2 注意:int/float数据的异常处理
+                3 调用hcl模块中append_house_data方法,传入房源对象
+
+            (4) 显示房源数据: show_house_data
+                1 数据在哪存放?
+                    hcl模块中的list_houses列表存放
+                2 当前list_houses列表存放的是?
+                    房源对象
+
+            (5) 修改房源数据: update_house_data
+                1 构建携带修改数据的房源对象
+                    修改的数据: 6个字段
+                2 修改的方式
+                    1 修改全部字段的数据
+                        1 判断用户输入的id是否存在
+                        2 输入5个字段的数据,构建携带数据的房源对象
+                        3 调用 self.controller.modify_house_data 方法,判断返回值,确定是否修改成功
+
+                    2 修改部分字段的数据
+                        1 找到id对应的房源对象
+                        2 使用菜单,用户选择修改的字段
+                        3 判断用户选择,修改对应的对象属性值
+                        4 构建携带数据的房源对象
+                        5 调用 self.controller.modify_house_data 方法,判断返回值,确定是否修改成功
+
+            (6) 删除房源数据: delete_house_data
+                1 输入删除的房源对象id
+                2 判断输入的id是否在房源对象中存在
+                3 调用 self.controller.remove_house_data 方法,从 存储所有房源对象的列表中删除对应的房源对象
+                4 问题: 后续房源对象的序号在删除的基础上发生变化?
+                    如: 删除第4个房源对象, 5-最后的房源对象id-1
+
+                    方案1: 遍历后续的房源对象, 基于索引值修改
+                    方案2: filter + map
+
+            (7) 查询房源数据: find_house_data (name/type/area/uprice/tpirce)
+                1 提供功能菜单(name/type/area/uprice/tpirce)
+                2 构建对应的查询的函数,并传递数据
+                3 调用 self.controller.query_house_data 方法,传入函数及数据
+                4 遍历查询的结果
+
+            (8) 房源数据排序: sort_house_data (area/uprice/tpirce)
+                1 提供功能菜单(area/uprice/tpirce)
+                2 构建对应的排序的函数,并传递数据
+                3 调用 self.controller.sorted_house_data 方法,传入函数及排序方式
+                4 遍历查询的结果
+
+            (9) 退出房源系统: quit_house_system
+                import sys
+                sys.exit('谢谢使用')
+5 项目测试
+
+6 项目部署
+
+7 项目维护

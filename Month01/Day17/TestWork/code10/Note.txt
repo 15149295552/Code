@@ -1,0 +1,32 @@
+10、名片管理器
+    完成基本的功能：
+        1、添加名片
+        2、删除名片
+        3、修改名片
+        4、查询名片
+        5、退出系统
+    程序运行时，除非选择退出系统，否则重复执行功能。
+    提示：名片信息包含：姓名、公司名、电话、职务等，需要使用基于面向对象的思想实现。
+
+程序设计架构: MVC
+
+名片模型类 CardModel
+    定义名片对象的特征: ID、姓名、公司名、电话、职务
+        数据校验字段: 电话(长度:11位/8位/7位)
+
+名片逻辑控制类 CardController
+    实现名片核心功能
+        增加: add_card_data
+        修改: modify_card_data
+        删除: delete_card_data
+        查询: query_card_data
+
+名片视图展示类 CardView
+    实现与用户交互: 输入/结果展示
+        功能菜单: __display_menu
+        功能选择: __user_choice
+        增加数据: __append_card_data
+        更新数据: __update_card_data
+        删除数据: __remove_card_data
+        查询数据: __find_card_data
+        主程序: main

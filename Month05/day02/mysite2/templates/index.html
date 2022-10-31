@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>欢迎来到达内科技</h1>
+<h3>欢迎您: {{ username }}</h3>
+
+{% if stock <= 10 %}
+    <h3>库存不足,仅剩{{ stock }}件</h3>
+{% elif stock > 10 and stock <= 100 %}
+    <h3>库存充足,还有{{ stock }}件</h3>
+{% endif %}
+
+
+{% for item in news_list %}
+    <li>{{ item }}</li>
+{% empty %}
+    <li>获取列表信息失败</li>
+{% endfor %}
+
+<table border="1">
+    <tr>
+        <td>股票</td>
+        <td>价格</td>
+    </tr>
+    <tr>
+        <td>{{ dic.name }}</td>
+        <td>{{ dic.price }}</td>
+    </tr>
+</table>
+
+<h3>函数:{{ func }}</h3>
+
+<h3>姓名:{{ mypet.name }}  颜色:{{ mypet.color }} 说:{{ mypet.say }}</h3>
+
+{% load static %}
+<img src="{% static '3.jpeg' %}">
+
+
+</body>
+</html>

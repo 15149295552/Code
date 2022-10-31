@@ -1,0 +1,10 @@
+mysql -uroot -p123456
+
+create database aiddb default charset utf8;
+use aiddb;
+create table user_tab(
+id int primary key auto_increment,
+username varchar(20),
+password char(32)
+);
+insert into user_tab(username,password) values("zhaoliying", "123456"),("reba","123456");

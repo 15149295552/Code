@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>北京，北京，北京... ...</h1>
+<button id="btn1">使用$.get发送请求</button>
+<button id="btn2">使用$.post发送请求</button>
+<button id="btn3">使用$.ajax发送请求</button>
+
+<script src="../static/jquery-1.11.3.js"></script>
+
+<script>
+    $("#btn1").on("click", function(){
+        $.get(
+            "http://127.0.0.1:8000/server/",
+            {"username":"zhaoliying", "age": 18},
+            function(resp){
+                console.log(resp)
+            }
+        )
+    })
+</script>
+
+<script>
+    $("#btn2").on("click", function(){
+        $.post(
+            "http://127.0.0.1:8000/server/",
+            {"username":"zhaoliying", "age": 18},
+            function(resp){
+                console.log(resp)
+            }
+        )
+    })
+</script>
+
+<script>
+    $("#btn3").on("click", function(){
+        $.ajax({
+            type: "delete",
+            url: "http://127.0.0.1:8000/server/",
+            data: {"username":"zhaoliying", "age":18},
+            success: function(resp){
+                console.log(resp)
+            },
+            dataType: "html",
+            async: true,
+            error: function(xhr){
+                console.log(xhr)
+            },
+            beforeSend: "",
+        })
+    })
+</script>
+
+</body>
+</html>

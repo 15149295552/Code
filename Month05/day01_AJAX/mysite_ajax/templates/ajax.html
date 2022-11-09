@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>测试AJAX，噢耶！</h1>
+
+<!--<script>-->
+<!--    var xhr = new XMLHttpRequest();-->
+<!--    xhr.open("get","http://127.0.0.1:8000/server/?username=zhaoliying", true);-->
+<!--    xhr.send(null);-->
+
+<!--    xhr.onreadystatechange = function(){-->
+<!--        if(xhr.readyState == 4){-->
+<!--            console.log("获取到的响应为:", xhr.responseText)-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("post","http://127.0.0.1:8000/server/", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.send("username=zhaoliying&age=36");
+
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+            console.log("获取到的响应为:", xhr.responseText)
+        }
+    }
+
+</script>
+
+
+</body>
+</html>

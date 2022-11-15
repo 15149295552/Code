@@ -1,0 +1,4 @@
+1.appkey:1282632066
+2.appsecret:de8f6de0265564e303fed0305172286a
+3.redirect_uri:http://localhost:7000/dadashop/templates/callback.html
+4.url:https://api.weibo.com/oauth2/authorize?client_id={}&redirect_uri={}&response_type=code

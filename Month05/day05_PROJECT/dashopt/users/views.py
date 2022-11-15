@@ -4,6 +4,7 @@ import time
 import base64
 import random
 import hashlib
+import requests
 
 from django.conf import settings
 from django.core import mail
@@ -11,7 +12,7 @@ from django.core.cache import caches
 from django.http import JsonResponse
 from django.views import View
 from django.db import transaction
-from users.models import UserProfile, Address
+from users.models import UserProfile, Address, WeiBoProfile
 
 from utils.logging_dec import logging_check
 from utils.smsapi import send_message
@@ -71,18 +72,8 @@ def register_view(request):
         return JsonResponse({"code": 10104, "error": "该用户名已被占用"})
 
     # 发送激活邮件
-    # base64("1016_liying")
-    code_num = random.randint(1000, 9999)
-    code_str = f"{code_num}_{username}"
-    code = base64.urlsafe_b64encode(code_str.encode()).decode()
-
-    verify_url = f"http://127.0.0.1:7000/dadashop/templates/active.html?code={code}"
+    verify_url = get_verify_url(username)
     send_active_email(email, verify_url)
-
-    # 存入redis: {"email_liying": 1111}
-    key = f"email_{username}"
-    EMAIL_CACHE.set(key, code_num, 86400 * 3)
-
     token = make_token(username)
 
     # 返回响应
@@ -338,6 +329,156 @@ def sms_view(request):
     return JsonResponse({"code": 200, "data": "短信发送成功!"})
 
 
+class OAuthWeiBoCodeView(View):
+    def get(self, request):
+        """
+        获取微博授权登录页的视图逻辑
+        响应:{"code":200,"oauth_url":""}
+        """
+        oauth_url = f"https://api.weibo.com/oauth2/authorize?client_id={settings.CLIENT_ID}&redirect_uri={settings.REDIRECT_URI}&response_type=code"
+
+        return JsonResponse({"code": 200, "oauth_url": oauth_url})
+
+
+class OAuthWeiBoTokenView(View):
+    def get(self, request):
+        """
+        获取access_token视图逻辑
+        1.获取授权码code
+        2.利用code获取access_token
+        """
+        code = request.GET.get("code")
+        url = "https://api.weibo.com/oauth2/access_token"
+        data = {
+            "client_id": settings.CLIENT_ID,
+            "client_secret": settings.CLIENT_SECRET,
+            "grant_type": "authorization_code",
+            "code": code,
+            "redirect_uri": settings.REDIRECT_URI,
+        }
+
+        html = requests.post(url=url, data=data).json()
+        print("------->", html)
+        """
+        {
+            "access_token": "ACCESS_TOKEN",
+            "expires_in": "7200",
+            "remind_in": "7200",
+            "uid": "1404376560"
+        }
+        """
+
+        """
+        1.用户第一次使用微博登录: 201
+        2.用户之前扫码登录过
+          2.1 在绑定注册页关闭页面: 201
+          2.2 和正式用户已经绑定: 200
+        # 201响应: {"code":201, "uid": wuid}
+        # 200响应: {"code":200, "token": token, "username": username}
+        """
+
+        wuid = html.get("uid")
+        access_token = html.get("access_token")
+
+        try:
+            weibo_user = WeiBoProfile.objects.get(wuid=wuid)
+        except Exception as e:
+            WeiBoProfile.objects.create(wuid=wuid, access_token=access_token)
+            return JsonResponse({"code": 201, "uid": wuid})
+
+        user = weibo_user.user_profile
+        if user:
+            # 已经绑定过:200
+            # window.location.href="index.html"
+            return JsonResponse({"code": 200, "username": user.username, "token": make_token(user.username)})
+
+        # 非第一次,在绑定注册页关闭页面
+        return JsonResponse({"code": 201, "uid": wuid})
+
+    def post(self, request):
+        """
+        没有账号,立即注册视图逻辑
+        1.获取请求体数据
+        2.校验用户名是否被占用
+        3.和微博用户绑定
+        4.发送激活邮件
+        5.返回响应
+        """
+        data = json.loads(request.body)
+        username = data.get("username")
+        password = data.get("password")
+        email = data.get("email")
+        phone = data.get("phone")
+        wuid = data.get("uid")
+
+        user_query = UserProfile.objects.filter(username=username)
+        if user_query:
+            return JsonResponse({"code": 10119, "error": "用户名已被占用"})
+
+        with transaction.atomic():
+            # 存储点
+            sid = transaction.savepoint()
+            try:
+                user = UserProfile.objects.create(username=username, password=md5_string(password), email=email, phone=phone)
+
+                weibo_user = WeiBoProfile.objects.get(wuid=wuid)
+                weibo_user.user_profile = user
+                weibo_user.save()
+            except Exception as e:
+                # 回滚+返回
+                transaction.savepoint_rollback(sid)
+                return JsonResponse({"code": 10120, "error": "微博服务器繁忙，请再试一次~"})
+
+            # 提交事务
+            transaction.savepoint_commit(sid)
+
+        # 发送激活邮件
+        verify_url = get_verify_url(username)
+        send_active_email(email, verify_url)
+
+        token = make_token(username)
+
+        return JsonResponse({"code": 200, "username": username, "token": token})
+
+
+class BindUserView(View):
+    def post(self, request):
+        """
+        已有账号,立即绑定视图逻辑
+        1.获取请求体数据
+        2.校验用户名和密码
+        3.绑定两个用户
+        4.返回响应(username、token)
+        """
+        data = json.loads(request.body)
+        username = data.get("username")
+        password = data.get("password")
+        wuid = data.get("uid")
+
+        try:
+            user = UserProfile.objects.get(username=username)
+        except Exception as e:
+            return JsonResponse({"code": 10116, "error": "用户名或密码错误"})
+
+        if user.password != md5_string(password):
+            return JsonResponse({"code": 10117, "error": "用户名或密码错误"})
+
+        # 微博用户和正式用户绑定关系
+        try:
+            weibo_user = WeiBoProfile.objects.get(wuid=wuid)
+        except Exception as e:
+            return JsonResponse({"code": 10118, "error": "微博服务器繁忙,请再试一次~"})
+
+        weibo_user.user_profile = user
+        weibo_user.save()
+
+        # 返回响应
+        username = user.username
+        token = make_token(username)
+
+        return JsonResponse({"code": 200, "username": username, "token": token})
+
+
 def md5_string(string):
     """
     功能函数:md5加密
@@ -375,3 +516,31 @@ def send_active_email(email, verify_url):
         from_email=settings.EMAIL_HOST_USER,
         recipient_list=[email]
     )
+
+
+def get_verify_url(username):
+    """
+    功能函数:生成邮件激活链接
+    """
+    # base64("1016_liying")
+    code_num = random.randint(1000, 9999)
+    code_str = f"{code_num}_{username}"
+    code = base64.urlsafe_b64encode(code_str.encode()).decode()
+
+    verify_url = f"http://127.0.0.1:7000/dadashop/templates/active.html?code={code}"
+
+    # 存入redis: {"email_liying": 1111}
+    key = f"email_{username}"
+    EMAIL_CACHE.set(key, code_num, 86400 * 3)
+
+    return verify_url
+
+
+
+
+
+
+
+
+
+

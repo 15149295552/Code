@@ -31,6 +31,6 @@ ary = np.zeros((2,2,2),dtype='int32')
 
 
 #ones
-ary = np.ones(10,dtype='int32')
+ary = np.ones(10,dtype='bool_')
 print(ary)
 

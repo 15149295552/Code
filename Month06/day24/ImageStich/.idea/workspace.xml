@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b4aac50-bc23-48ff-92d7-4e7fb93db5af" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1ec19GaVGXN5Fuw5aeisHMWMHCo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\BaiduNetdiskDownload\TB\03.2019年OpenCV计算机视觉物体检测项目实战（附代码、讲义、数据）100课\00.配套资料（代码、讲义、数据）\案例实战-全景图像拼接\ImageStich" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ImageStiching">
+    <configuration name="ImageStiching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ImageStich" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageStiching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stitcher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ImageStich" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stitcher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ImageStiching" />
+        <item itemvalue="Python.Stitcher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b4aac50-bc23-48ff-92d7-4e7fb93db5af" name="Default Changelist" comment="" />
+      <created>1594605914551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594605914551</updated>
+      <workItem from="1594605919908" duration="834000" />
+      <workItem from="1594606783680" duration="2759000" />
+      <workItem from="1594636358028" duration="5000" />
+      <workItem from="1595600223338" duration="3924000" />
+      <workItem from="1595660050504" duration="859000" />
+      <workItem from="1600846142017" duration="677000" />
+      <workItem from="1600940517935" duration="5582000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594636362314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-135.1920.1080@0.0.1366.728" timestamp="1594636362314" />
+    <state width="1322" height="154" key="GridCell.Tab.0.bottom" timestamp="1600955852482">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="154" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600955852482" />
+    <state width="1322" height="154" key="GridCell.Tab.0.center" timestamp="1600955852481">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="154" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600955852481" />
+    <state width="1322" height="154" key="GridCell.Tab.0.left" timestamp="1600955852481">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="154" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600955852481" />
+    <state width="1322" height="154" key="GridCell.Tab.0.right" timestamp="1600955852482">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="154" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600955852482" />
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1594606783337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594606783337" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ImageStich$Stitcher.coverage" NAME="Stitcher Coverage Results" MODIFIED="1600952017785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageStich$ImageStiching.coverage" NAME="ImageStiching Coverage Results" MODIFIED="1600955852461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

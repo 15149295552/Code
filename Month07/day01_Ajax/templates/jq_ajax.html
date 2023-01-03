@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>JQuery对AJAX的支持,哦耶!</h1>
+<button id="btn1">使用$.get()发送请求</button>
+<button id="btn2">使用$.post()发送请求</button>
+<button id="btn3">使用$.ajax()发送请求</button>
+
+<script src="../static/jquery-1.11.3.js"></script>
+
+<script>
+    $("#btn1").on("click", function(){
+        $.get(
+            "http://127.0.0.1:8000/server/",
+            {"username":"zhaoliying"},
+            function(resp){
+                console.log(resp)
+            }
+        )
+    })
+</script>
+
+<script>
+    $("#btn2").on("click", function(){
+        $.post(
+            "http://127.0.0.1:8000/server/",
+            {"username":"zhaoliying"},
+            function(resp){
+                console.log(resp)
+            }
+        )
+    })
+</script>
+
+<script>
+    $("#btn3").on("click", function(){
+        $.ajax({
+            type: "post",
+            url: "http://127.0.0.1:8000/server/",
+            data: {"username": "zhaoliying"},
+            success: function(result){
+                console.log(result)
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

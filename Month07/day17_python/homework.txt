@@ -1,0 +1,12 @@
+1.采集豆瓣电影排行榜(标题、信息、分数、点评人数)
+https://movie.douban.com/chart
+
+2.对豆瓣电影排行榜数据进行清洗后存储到Excel文件中
+    "电影名称"列保留第一个
+	增加"上映时间"列，保留第一个时间
+	增加"主演"列，只保留演员姓名
+	"评价人数"列，只保留数字
+
+3.注册抖音账号,发布至少一个短视频。
+https://creator.douyin.com/creator-micro/data/stats/video
+视频数据-》作品数据

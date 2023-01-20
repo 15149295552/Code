@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+html{
+	height: 100%;
+}
+body{
+	background: url("../img/login_bg.jpg") center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+#footer{
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+}
+
+#center{
+	width: 500px;
+	margin: 150px auto;
+}
+
+.input-user,.input-password,.input-password2,.btn_div{
+	height: 60px;
+}
+
+.span_text{
+	display: inline-block;
+	font: 20px bolder;
+	width: 100px;
+	text-align: right;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.form-control{
+	width: 300px;
+	height: 30px;
+}
+
+.input-password{
+	position: relative;
+}
+
+.input-group-btn img{
+	width: 30px;
+	position: absolute;
+	right: 92px;
+	top: 3px;
+}
+
+.btn{
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	margin-left: 105px;
+	border: none;
+	border-radius: 5px;
+	
+}

@@ -1,0 +1,23 @@
+1，INSTALLED_APPS 中添加 corsheaders
+2，MIDDLEWARE 中添加 corsheaders.middleware.CorsMiddleware
+           位置尽量靠前，官方建议 ‘django.middleware.common.CommonMiddleware’ 上方
+3，CORS_ORIGIN_ALLOW_ALL  布尔值  如果为True 白名单不启用
+
+5, CORS_ALLOW_METHODS = (
+                'DELETE',
+                'GET',
+                'OPTIONS',
+                'PATCH',
+                'POST',
+                'PUT',
+                )
+6, CORS_ALLOW_HEADERS = (
+                'accept-encoding',
+                'authorization',
+                'content-type',
+                'dnt',
+                'origin',
+                'user-agent',
+                'x-csrftoken',
+                'x-requested-with',
+            )

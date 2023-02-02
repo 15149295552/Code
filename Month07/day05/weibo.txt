@@ -1,0 +1,8 @@
+1. App Key
+3801349593
+
+2. App Secret
+923e48af8626189af1173abe12817b92
+
+3. Redirect URI
+http://localhost:7000/dadashop/templates/callback.html

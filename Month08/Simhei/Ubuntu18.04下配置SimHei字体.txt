@@ -1,0 +1,40 @@
+1.将SimHei.ttf字体 复制到  usr/share/fonts/
+
+	sudo cp ~/SimHei.ttf /usr/share/fonts/
+
+2.指定fonts权限为 777
+
+	cd /usr/share
+
+	sudo chmod 777 fonts
+
+
+3.删除matplotlib缓存
+
+	import matplotlib as mpl
+	mpl.get_cachedir()      ---->   /home/tarena/.cache/matplotlib
+
+
+	cd /home/tarena/.cache/matplotlib
+	rm -r *
+
+
+4.修改matplotlib的配置
+	import matplotlib as mpl
+	mpl.matplotlib_fname()  -->/usr/local/lib/python3.6/dist-packages/matplotlib/								mpl-data/matplotlibrc
+
+	sudo vi /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/matplotlibrc
+
+
+
+	添加：
+		font.family : sans-serif
+  
+		font.sans-serif : SimHei
+
+		axes.unicode_minus : False
+
+
+
+5.在jupyter notebook中重启服务
+

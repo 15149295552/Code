@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+  <script type="text/javascript">
+    window.onload = function () {
+      var myProgress = document.getElementById("myProgress");
+      var mySpan = document.getElementById("mySpan");
+      var value = myProgress.value;
+      mySpan.innerText = value + "%";
+      var ID = setInterval(function () {
+        value = myProgress.value;
+        if (value < 9) {
+          value += 1;
+          myProgress.value = value;
+          mySpan.innerText = value + "%";
+        }
+        if (value == 100) {
+          clearInterval(ID);
+        }
+      }, 500);
+    }
+  </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预测</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap  end-->
+	<link rel="stylesheet" type="text/css" href="css/head.css">
+	<link rel="stylesheet" type="text/css" href="css/help.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>	
+
+
+	<div class="container page-contnt">
+		<div class="row">
+			<div class="col-md-12 help">
+				<div class="text">
+
+					<p>请选择需要识别的图片并上传：</p>
+					<input id="imgFile" name="imgFile" type="file" /><br/>
+					<input id="imgFileBase64" name="imgFileBase64" type="hidden"/>
+					<button type="button" id="submitBtn" onclick="this.style.visibility='hidden';MsgBox();"><img src="images/timg.jpg"></button>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- foot -->
+	<div class="foot over">
+		<div class="fl foot-l">
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+		<div class="fr foot-r">
+			<span>©2020</span>
+			<span><a href="http://www.beian.miit.gov.cn/" target="_blank"></a></span>
+		</div>
+	</div>
+
+	<script>
+		function MsgBox()
+		{
+			alert("正在认真地埋头分析中......");
+		}
+
+		$(function(){
+
+			$("#imgFile").change(function(){
+
+				var file = this.files[0];
+
+				if(!/image\/\w+/.test(file.type)){
+
+					$.modal.alertError("文件格式错误，请上传JPG类型图片");
+
+					return false;
+
+				}
+
+				
+
+				photoCompress(file, {
+
+					width: parseInt($("#imgWidth").val())
+
+				 } , function(base64Codes){
+
+					$("#showImg").attr("src",base64Codes);
+
+					$("#imgFileBase64").val(base64Codes);
+
+				});
+
+			});
+
+			
+
+			$("#submitBtn").click(function(){
+				
+				var url = "http://127.0.0.1:8000/do_infer.html";
+
+				var data = {
+
+				  "req_data": getNowTime(),
+
+				  "user_id": $("#userId").val(),
+
+				  "req_sn": getSn(),
+
+				  "img_data": $("#imgFileBase64").val()
+
+				}
+
+
+
+				/*alert("请求json:" + JSON.stringify(data));*/
+
+				$.post(url,JSON.stringify(data),function(resp){
+
+					/*alert("返回json:" + JSON.stringify(resp));*/
+					var retstr = JSON.stringify(resp);
+					var showstr = retstr.substring(1,retstr.length-1);
+					var aLine = showstr.split("<br>");
+					var n = aLine.length;
+
+					document.write("<!DOCTYPE html>");
+					document.write("<html lang='en'>");
+					document.write("<head>");
+					document.write("<meta charset='utf-8'>");
+					document.write("<meta http-equiv='X-UA-Compatible' content='IE=edge'>");
+					document.write("<meta name='viewport' content='width=device-width, initial-scale=1'>");
+					document.write("<title>识别结果</title>");
+					document.write("<!-- Bootstrap -->");
+					document.write("<link href='css/bootstrap.min.css' rel='stylesheet'>");
+
+					document.write("<!-- Bootstrap  end-->");
+					document.write("<link rel='stylesheet' type='text/css' href='css/head.css'>");
+					document.write("<link rel='stylesheet' type='text/css' href='css/help.css'>");
+
+					document.write("</head>");
+					document.write("<body>");
+
+
+					document.write("<div class='container page-contnt'>");
+					document.write("<div class='row'>");
+					document.write("<div class='col-md-12 help'>");
+					document.write("<div class='title center'>识别结果</div>");
+					document.write("<div class='text'>");
+
+					for (i = 0; i < n; i++) {
+						document.write("<font color='#20B2AA'>- </font>");
+						var aTeam = aLine[i].split("|");
+						var randomNum = Math.floor(Math.random()*aTeam.length);
+						document.write(aTeam[randomNum]);
+						document.write("<br>");
+ 					}
+
+					document.write("</body></html>");
+
+				},"json");
+
+			});
+
+		})
+
+		
+
+
+
+		function photoCompress(file,w,objDiv){
+
+            var ready=new FileReader();
+
+            /*开始读取指定的Blob对象或File对象中的内容. 当读取操作完成时,readyState属性的值会成为DONE,如果设置了onloadend事件处理程序,则调用之.同时,result属性中将包含一个data: URL格式的字符串以表示所读取文件的内容.*/
+
+            ready.readAsDataURL(file);
+
+            ready.onload=function(){
+
+                var re=this.result;
+
+                canvasDataURL(re,w,objDiv)
+
+            }
+
+        }
+
+
+
+        function canvasDataURL(path, obj, callback){
+
+            var img = new Image();
+
+            img.src = path;
+
+            img.onload = function(){
+
+                var that = this;
+
+                // 默认按比例压缩
+
+                var w = that.width,
+
+                    h = that.height,
+
+                    scale = w / h;
+
+                w = obj.width || w;
+
+                h = obj.height || (w / scale);
+
+                var quality = 0.7;  // 默认图片质量为0.7
+
+                //生成canvas
+
+                var canvas = document.createElement('canvas');
+
+                var ctx = canvas.getContext('2d');
+
+                // 创建属性节点
+
+                var anw = document.createAttribute("width");
+
+                anw.nodeValue = w;
+
+                var anh = document.createAttribute("height");
+
+                anh.nodeValue = h;
+
+                canvas.setAttributeNode(anw);
+
+                canvas.setAttributeNode(anh);
+
+                ctx.drawImage(that, 0, 0, w, h);
+
+                // 图像质量
+
+                if(obj.quality && obj.quality <= 1 && obj.quality > 0){
+
+                    quality = obj.quality;
+
+                }
+
+                // quality值越小，所绘制出的图像越模糊
+
+                var base64 = canvas.toDataURL('image/jpeg', quality);
+
+                // 回调函数返回base64的值
+
+                callback(base64);
+
+            }
+
+        }
+
+		
+
+		function getNowTime(){
+
+			var myDate = new Date();
+
+			var y = myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+
+			var m = (myDate.getMonth()+1)<10?("0"+(myDate.getMonth()+1)):(myDate.getMonth()+1);       //获取当前月份(0-11,0代表1月)
+
+			var d = myDate.getDate()<10?("0"+myDate.getDate()):myDate.getDate();        //获取当前日(1-31)
+
+			var h = myDate.getHours()<10?("0"+myDate.getHours()):myDate.getHours();       //获取当前小时数(0-23)
+
+			var M = myDate.getMinutes()<10?("0"+myDate.getMinutes()):myDate.getMinutes();     //获取当前分钟数(0-59)
+
+			var s = myDate.getSeconds()<10?("0"+myDate.getSeconds()):myDate.getSeconds();     //获取当前秒数(0-59)
+
+			return y + "-" + m + "-"+ d + " " + h + ":" + M + ":" + s;
+
+		}
+
+		
+
+		function getSn(){
+
+			var myDate = new Date();
+
+			var y = myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+
+			var m = (myDate.getMonth()+1)<10?("0"+(myDate.getMonth()+1)):(myDate.getMonth()+1);       //获取当前月份(0-11,0代表1月)
+
+			var d = myDate.getDate()<10?("0"+myDate.getDate()):myDate.getDate();        //获取当前日(1-31)
+
+			var userId = $("#userId").val();
+
+			return y + "" + m + ""+ d + "" + userId;
+
+		}
+
+	</script>
+
+</body>
+</html>

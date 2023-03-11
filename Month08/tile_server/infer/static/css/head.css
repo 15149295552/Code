@@ -1,0 +1,374 @@
+/*@font-face {
+    font-family:PingFang Medium;
+    src:url('../fonts/PingFang Medium.ttf');
+}*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+body{
+    width: 100%;
+    font-size: 16px;
+    color: #353535;
+    background: #fff;
+    font:13px/23px 'PingFang SC',Arial,'Microsoft YaHei Light',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    word-wrap:break-word;
+}
+em {
+    font-style: normal;
+}
+ul,li{
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+    outline: 0;
+    color: #353535;
+}
+a:hover { 
+    color: #009fe8;
+}
+img{
+    width: 100%;
+    line-height:0;
+    border: none;
+    vertical-align: middle;
+}
+input, textarea,button {
+    padding: 0;
+    font:13px/23px 'PingFang SC',Arial,'Microsoft YaHei Light',sans-serif;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+textarea:focus {
+    outline: none;
+}
+input:focus {
+    outline: none;
+}
+input{
+    background:none;    
+    outline:none; 
+    border:0px;
+}
+button{
+    outline:none; 
+    border:0px;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;  
+}
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: none;
+    border:none;
+}
+h1,h2,h3,h4{font-weight: normal;}
+::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+:-moz-placeholder {
+    color: #CCCCCC;
+}
+::-moz-placeholder {
+    color: #CCCCCC;
+}
+:-ms-input-placeholder {
+    color: #CCCCCC;
+}
+.clear {
+    zoom: 1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.head{
+    flex: 0 0 auto;
+}
+.page-contnt{
+    flex: 1 0 auto;
+}
+.foot{
+    clear:both;
+    flex: 0 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.ell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.over{
+    overflow: hidden;
+}
+.flex {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.flex2{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.flex-box{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.fw {
+    flex-wrap: wrap;
+}
+.w-1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+.flex-justify{
+    display: flex;
+    justify-content: space-between;
+}
+.relative{
+    position: relative;
+}
+.w-100{
+    width: 100%;
+}
+/*多选 单选*/
+input.check:checked {
+    background: url(../images/checked.png) no-repeat center left;
+    background-size: 20px 20px;
+}
+input.check{
+    background: url(../images/check.png) no-repeat center left;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+}
+input[type="checkbox"], input[type=radio] {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+
+
+/*弹窗*/
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+.pupop{
+    width: 4rem;
+    height: 4.45rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.15rem;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/*head登录*/
+.head {
+    margin: 25px 2.4%;
+}
+
+.head .logo img{
+    width: auto;
+    height: 72px;
+}
+
+
+
+
+
+.head .sign-btn{
+    padding-bottom: 10px;
+}
+.head .sign-btn a{
+    width: 58px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #238A91;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.sign-state{
+    padding-bottom: 10px;
+}
+.user{
+    line-height: 38px;
+    color: #222;
+    font-size: 15px;
+    cursor: pointer;
+}
+.user:hover span{
+    color: #238A91;
+}
+.user-photo{
+    width: 38px;
+    height: 38px;
+    line-height: 0;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 7px;
+    border:1px solid #4e71f2;
+    float: left;
+}
+.user-photo img{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.user-links{
+    width: 100%;
+    padding: 4px 0;
+    margin: 5px 0 0 0;
+    border-radius: 24px;
+    border:1px solid #b4b5b2;
+    background: #fff;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.user-links li{
+    line-height: 62px;
+    font-size: 16px;
+    color: #a8a6a8;
+}
+.user-links li:hover{
+    color: #238A91;
+}
+
+
+
+
+
+/*foot*/
+.foot{
+    padding: 10px 3%;
+    line-height: 24px;
+    background: #FAFAFA;
+    color: #A6A6A6;
+    font-size: 15px;
+}
+.foot a{
+   color: #A6A6A6;
+   margin-right: 40px;
+}
+.foot span{
+   margin-left: 70px;
+}
+.foot a:hover{
+    color: #238A91;
+}
+
+
+/* 小屏幕（桌面显示器） */
+@media (max-width: 768px){ 
+.head {
+    margin: 15px 2.4%;
+}
+
+.foot>div{
+    width: 100%;
+}
+.foot-r span{
+    margin: 0 15px 0 0;
+}
+}
+
+
+/* 中等屏幕（桌面显示器） */
+@media (max-width: 992px) { 
+
+
+}
+
+/* 大屏幕（大桌面显示器） */
+@media (min-width: 1300px){
+
+}

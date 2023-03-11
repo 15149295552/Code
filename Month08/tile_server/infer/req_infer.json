@@ -1,0 +1,20 @@
+{
+  "req_data": "2020-02-01 23:45:56",
+  "user_id": "0001",
+  "req_sn": "202002010001",
+  "img_data": "YXNmZGFzZGZhc2RmYWFhc2ZkYXNkZmFzZGZhYWFzZmRhc2RmYX"
+};
+
+{
+  "err_code:": 0,
+  "err_msg": "ok",
+  "req_data": "2020-02-01 23:45:56",
+  "resp_data": "2020-02-01 23:45:56",
+  "user_id": "0001",
+  "req_sn": "202002010001",
+  "result": [
+    "自尊心强，荣誉感强",
+    "思维开阔，内在力量强",
+    "思维严密，虑事周到，理智务实"
+  ]
+};

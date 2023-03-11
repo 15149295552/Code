@@ -1,0 +1,23 @@
+/*帮助中心*/
+.help .title{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px 0 50px;
+}
+.help .text{
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+/* 小屏幕（桌面显示器） */
+@media (max-width: 768px){ 
+.help .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+}

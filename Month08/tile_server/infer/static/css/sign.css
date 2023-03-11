@@ -1,0 +1,151 @@
+/*登录*/
+.sign{
+	max-width: 478px;
+	width: 90%;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.36);
+
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.sign .title{
+	padding: 44px 0;
+}
+.sign .title img{
+	width: 230px;
+}
+
+.sign ul{
+	padding: 0 40px;
+}
+.sign ul li{
+	margin-bottom: 23px;
+	overflow: hidden;
+}
+.sign-input{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	background: #fff;
+	border-radius: 5px;
+	padding-left: 45px;
+}
+.sign-input input{
+	width: 100%;
+	height: 48px;
+	font-size: 16px;
+	color: #353535;
+}
+.user{
+	background:#fff url('../images/icon-user.png') no-repeat 12px center;
+	background-size: 18px;
+}
+.mima{
+	background:#fff url('../images/icon-mima.png') no-repeat 12px center;
+	background-size: 20px;
+}
+.phone{
+	background:#fff url('../images/icon-phone.png') no-repeat 12px center;
+	background-size: 22px;
+}
+.verifi{
+	background:#fff url('../images/icon-verifi.png') no-repeat 12px center;
+	background-size: 21px;
+}
+.sign ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+.sign ul li p{
+	color: #fff;
+	font-size: 14px;
+}
+.sign ul li a:hover{
+	color: #238A91;
+}
+.sign-btn{
+	margin: 0 40px 67px;
+}
+.sign-btn button{
+	width: 100%;
+	height: 48px;
+	background: #238A91;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.sign-btn button:hover{
+	background: #1e777d;
+}
+
+
+
+
+
+
+
+
+
+
+
+.register{
+	
+}
+
+.verifi{
+	width: 70%;
+}
+.yzm{
+	width: 28%;
+	float: right;
+	height: 48px;
+    line-height: 48px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.yzm:hover{
+	color: #238A91;
+}
+
+
+
+
+
+
+
+
+/* 小屏幕（桌面显示器） */
+@media (max-width: 768px){ 
+.verifi{
+	width: 65%;
+}
+.yzm {
+    width: 33%;
+    font-size: 14px;
+}
+
+.sign .title {
+    padding: 30px 0 20px;
+}
+.sign .title img {
+    width: 180px;
+}
+.sign ul li {
+    margin-bottom: 15px;
+}
+.sign-btn {
+    margin: 0 40px 35px;
+}
+/*.register{
+	margin: 35px auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: translate(0, 0);
+}*/
+}
